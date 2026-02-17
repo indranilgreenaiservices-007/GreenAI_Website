@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import ContactUs from "./components/home/ContactUs";
 import Hero from "./components/home/Hero";
+import WhatWeDo from "./components/home/WhatWeDo";
 import Philosophy from "./components/home/Philosophy";
+import ActiveBackground from "./components/layout/ActiveBackground";
 import RegIntelFeature from "./components/home/RegIntelFeature";
 import Ecosystem from "./components/home/Ecosystem";
 import Academy from "./components/home/Academy";
-
+import Career from "./components/home/Career";
+import Blogs from "./components/home/Blogs";
 import TrustedBy from "./components/home/TrustedBy";
 import WhyChoose from "./components/home/WhyChoose";
 import FAQ from "./components/home/FAQ";
@@ -43,6 +47,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen font-sans text-[#0b1220]">
+      <ActiveBackground />
       <Navbar
         isScrolled={isScrolled}
         mobileOpen={mobileOpen}
@@ -55,15 +60,21 @@ export default function App() {
           onPrimary={() => scrollToId("regintel")}
           onSecondary={() => scrollToId("solutions")}
         />
-        <TrustedBy />
+        <WhatWeDo />
         <Philosophy />
-        <RegIntelFeature />
-        <WhyChoose />
         <Ecosystem />
+        <RegIntelFeature />
         <Academy onContactClick={() => scrollToId("contact")} />
+        <TrustedBy />
+        <Career />
+        <Blogs />        
         <FAQ />
+
+        {/* The Contact Us section (formerly footer) */}
+        <ContactUs />
       </main>
 
+      {/* The actual site footer */}
       <Footer />
     </div>
   );

@@ -41,18 +41,14 @@
 
 body {
   margin: 0;
-  background-color: var(--background-base);
+  /* background-color: var(--background-base); - Moved to ActiveBackground */
+  background-color: transparent;
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Robust Professional Background */
-  background-image:
-    radial-gradient(1200px 800px at 50% -10%, rgba(46, 125, 50, 0.08), transparent 60%),
-    radial-gradient(1000px 800px at 90% 30%, rgba(230, 81, 0, 0.04), transparent 50%),
-    linear-gradient(to bottom, #ffffff, #f8fafc);
-  background-attachment: fixed;
+  /* background-attachment: fixed; - Handled by ActiveBackground */
 }
 
 /* Premium Utilities */

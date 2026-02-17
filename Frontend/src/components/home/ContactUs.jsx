@@ -1,15 +1,16 @@
 import React from "react";
 import { Leaf, MapPin, Mail, Phone } from "lucide-react";
 import ContactForm from "../ui/ContactForm";
+import logo from "../images/logo.webp"
 
-export default function Footer() {
+export default function ContactUs() {
     return (
-        <footer id="contact" className="py-16 border-t border-slate-200 bg-slate-50/50">
+        <section id="contact" className="py-16 border-t border-slate-200 bg-slate-50/50">
             <div className="container mx-auto px-6 w-full max-w-7xl grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 items-start">
                 <div className="flex flex-col gap-6">
                     <div className="flex gap-3 items-center">
                         <span className="w-10 h-10 grid place-items-center rounded-xl bg-green-50 border border-green-100 text-green-700 shadow-sm">
-                            <Leaf size={20} />
+                            <img src={logo} alt="logo" className="w-8 h-8" />
                         </span>
                         <div>
                             <div className="font-bold text-lg text-slate-900 leading-tight">GreenAI Services</div>
@@ -48,13 +49,11 @@ export default function Footer() {
                         <div className="text-slate-500 text-sm mt-0.5">Anish Banerjee</div>
                     </div>
 
-                    <div className="text-slate-400 font-medium text-sm pt-4">
-                        Designed with <span className="text-rose-500">♥</span> in Kolkata.
-                    </div>
+                    
                 </div>
 
                 <ContactForm />
             </div>
-        </footer>
+        </section>
     );
 }
