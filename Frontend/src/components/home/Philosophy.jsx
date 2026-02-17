@@ -5,7 +5,7 @@ export default function Philosophy() {
     return (
         <section id="philosophy" className="py-10 bg-white">
             <div className="container mx-auto px-6 w-full max-w-7xl">
-                <div className="mb-12 max-w-3xl">
+                <div className="mb-12 max-w-3xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-green-100 bg-green-50 text-green-700 font-semibold text-xs tracking-wide uppercase mb-4">
                         <Leaf size={14} />
                         <span>Green Tech • Responsible AI</span>

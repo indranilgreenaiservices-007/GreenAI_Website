@@ -121,7 +121,7 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
 
             {/* Glassmorphic Mobile menu */}
             <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out border-b border-white/20 backdrop-blur-xl ${mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+                className={`overflow-hidden transition-all duration-300 ease-in-out border-b border-white/20 backdrop-blur-xl opacity-50 ${mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
                     }`}
             >
                 <div className="container mx-auto px-6 py-6 flex flex-col gap-1">

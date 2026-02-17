@@ -11,7 +11,7 @@ const partners = [
 export default function TrustedBy() {
     return (
         <section className="py-10 border-y border-slate-200 bg-slate-50/50 overflow-hidden">
-            <div className="container mx-auto px-6 mb-6 text-center">
+            <div className="container mx-auto px-6 w-full max-w-7xl mb-6 text-center">
                 <p className="text-sm font-bold text-slate-500 uppercase tracking-widest">
                     Our Trusted Partners
                 </p>
@@ -53,7 +53,7 @@ export default function TrustedBy() {
                 </div>
 
             </div>
-        
+
         </section >
     );
 }

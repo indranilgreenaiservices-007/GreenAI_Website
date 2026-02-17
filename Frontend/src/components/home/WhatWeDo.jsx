@@ -49,7 +49,7 @@ const WhatWeDo = () => {
                 <div className="absolute top-[40%] -left-[10%] w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-3xl" />
             </div>
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-6 w-full max-w-7xl relative z-10">
                 <div className="max-w-3xl mx-auto text-center mb-20  ">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -111,17 +111,18 @@ const TimelineItem = ({ step, index }) => {
             {/* Content Card */}
             <div className="flex-1 pt-2 md:pt-0 pl-8 md:pl-0">
                 <div
-                    className={`bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300 relative ${isEven ? "md:mr-12 md:text-right" : "md:ml-12 md:text-left"
-                        }`}
+                    className={`bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300 relative 
+        ${isEven ? "md:ml-12 md:text-left" : "md:mr-12 md:text-right"}`}
                 >
                     <div
-                        className={`absolute top-1/2 w-4 h-4 bg-white border border-slate-100 transform -translate-y-1/2 rotate-45 hidden md:block ${isEven ? "-right-2 border-l-0 border-b-0" : "-left-2 border-r-0 border-t-0"
-                            }`}
+                        className={`absolute top-1/2 w-4 h-4 bg-white border border-slate-100 transform -translate-y-1/2 rotate-45 hidden md:block 
+            ${isEven ? "-left-2 border-r-0 border-t-0" : "-right-2 border-l-0 border-b-0"}`}
                     />
                     <h3 className="text-xl font-bold text-slate-900 mb-2">{step.title}</h3>
                     <p className="text-slate-600 leading-relaxed">{step.description}</p>
                 </div>
             </div>
+
         </motion.div>
     );
 };

@@ -5,7 +5,7 @@ export default function Blogs() {
     return (
         <section id="blogs" className="py-16 bg-slate-50 relative">
             <div className="container mx-auto px-6 w-full max-w-7xl">
-                <div className="mb-12 max-w-3xl">
+                <div className="mb-12 max-w-3xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-100 bg-blue-50 text-blue-700 font-semibold text-xs tracking-wide uppercase mb-4">
                         <Leaf size={12} />
                         Insights & Updates

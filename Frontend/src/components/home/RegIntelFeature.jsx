@@ -42,8 +42,8 @@ export default function RegIntelFeature() {
             <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(46,125,50,0.05),transparent_40%)]" aria-hidden="true"></div>
 
             <div className="container mx-auto px-6 w-full max-w-7xl relative z-10">
-                <div className="flex justify-between items-end gap-12 flex-wrap mb-10">
-                    <div className="max-w-2xl">
+                <div className="flex flex-col items-center text-center gap-12 mb-10">
+                    <div className="max-w-2xl mb-5">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 bg-white text-slate-700 font-semibold text-xs tracking-wide uppercase mb-4 shadow-sm">
                             <ShieldCheck size={14} />
                             <span>RegIntel 360</span>
@@ -56,8 +56,7 @@ export default function RegIntelFeature() {
                             workflow digitization, ERP + IoT integration, AI-assisted guidance, and audit-ready evidence trails.
                         </p>
                     </div>
-
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 ml-auto">
                         <div className="px-6 py-4 rounded-2xl bg-white border border-slate-200 shadow-sm text-center min-w-[120px]">
                             <div className="text-3xl font-bold text-slate-900">70%</div>
                             <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Faster Reporting</div>
@@ -70,11 +69,11 @@ export default function RegIntelFeature() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-start">
-                    <div className="space-y-2">
+                    <div className="space-y-2 ">
                         {tabs.map((t) => (
                             <button
                                 key={t.key}
-                                className={`w-full text-left p-4 rounded-xl transition-all duration-200 flex gap-4 items-start group ${t.key === active
+                                className={` cursor-pointer w-full text-left p-4  rounded-xl transition-all duration-200 flex gap-4 items-start group ${t.key === active
                                     ? "bg-white shadow-md border border-slate-200 ring-1 ring-slate-200/50"
                                     : "hover:bg-slate-100/80 border border-transparent"
                                     }`}
