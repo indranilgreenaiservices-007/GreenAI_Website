@@ -6,6 +6,8 @@ const partners = [
     "IISER Kolkata",
     "Dhirubhai Ambani University",
     "IIIT Hyderabad",
+    "Chanakya National Law University, Patna(CNLU)",
+    "University of Gauhati"
 ];
 
 export default function TrustedBy() {

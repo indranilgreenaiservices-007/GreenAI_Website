@@ -53,6 +53,8 @@ export default function Ecosystem() {
                                     AI-Based Validation
                                 </span>
                             </div>
+
+                            
                         </div>
 
                         <div className="bg-white/60 backdrop-blur-sm rounded-2xl border border-emerald-100 p-6 shadow-sm">
@@ -76,6 +78,16 @@ export default function Ecosystem() {
                             </ul>
                         </div>
                     </div>
+                    <div className="mt-6 pt-4 border-t border-emerald-100/50">
+                                <a
+                                    href="https://regintel360.greenai.services/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 text-sm font-bold text-emerald-700 hover:text-emerald-900 hover:underline underline-offset-4 transition-all"
+                                >
+                                    Visit RegIntel 360 <span>→</span>
+                                </a>
+                            </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
@@ -89,6 +101,7 @@ export default function Ecosystem() {
                             "RAG-powered knowledge base with updates",
                             "Tender + compliance workflows",
                         ]}
+                        link="https://legalbot.greenai.services/"
                     />
 
                     <TiltCard

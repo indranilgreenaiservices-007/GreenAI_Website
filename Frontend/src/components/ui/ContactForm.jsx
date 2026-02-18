@@ -99,10 +99,10 @@ export default function ContactForm() {
                         )}
                     </button>
 
-                    <div className="hidden sm:flex items-center gap-2 text-xs font-medium text-slate-500">
+                    {/* <div className="hidden sm:flex items-center gap-2 text-xs font-medium text-slate-500">
                         <ShieldCheck size={14} />
                         <span>Secure SSL Encryption</span>
-                    </div>
+                    </div> */}
                 </div>
             </form>
         </div>

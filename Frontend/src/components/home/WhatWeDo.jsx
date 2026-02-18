@@ -92,7 +92,7 @@ const WhatWeDo = () => {
             {/* mobile view  */}
             <div className="md:hidden relative mt-12 px-4 pb-20">
                 {/* Zig Zag Beam Layer */}
-                <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+                <div className="absolute inset-0 w-full h-full pointer-events-none z-0 px-2">
                     <svg className="w-full h-full" viewBox="0 0 100 110" preserveAspectRatio="none">
                         <defs>
                             <linearGradient id="beamGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -125,12 +125,12 @@ const WhatWeDo = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.9 }} // Cards appear first
-                            className={`relative w-3/4 p-4 rounded-xl bg-white border border-green-100 shadow-md 
+                            className={`relative w-1/2 p-4 rounded-xl bg-white border border-green-100 shadow-md 
                                 ${index % 2 === 0 ? "self-start ml-2 text-left" : "self-end mr-2 text-right"}
                             `}
                         >
                             {/* Pulse Glow Effect */}
-                            <div className="absolute inset-0 rounded-xl bg-green-400/20 animate-pulse z-0" />
+                            <div className="absolute inset-0 rounded-xl z-0" />
 
                             {/* Card Content with Icon */}
                             <div className={`relative z-10 flex items-center gap-3 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}>

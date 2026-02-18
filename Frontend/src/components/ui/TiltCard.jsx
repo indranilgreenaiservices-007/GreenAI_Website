@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-export default function TiltCard({ title, subtitle, icon, bullets, tone = "slate" }) {
+export default function TiltCard({ title, subtitle, icon, bullets, tone = "slate", link }) {
     const ref = useRef(null);
     const [rotation, setRotation] = useState({ x: 0, y: 0 });
 
@@ -81,6 +81,19 @@ export default function TiltCard({ title, subtitle, icon, bullets, tone = "slate
                         </li>
                     ))}
                 </ul>
+
+                {link && (
+                    <div className="mt-6 pt-4 border-t border-slate-200/50">
+                        <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`inline-flex items-center gap-2 text-sm font-bold hover:underline underline-offset-4 transition-all ${currentTone.subtitle}`}
+                        >
+                            Visit Platform <span>→</span>
+                        </a>
+                    </div>
+                )}
             </div>
         </div>
     );
