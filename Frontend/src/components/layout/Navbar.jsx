@@ -70,11 +70,11 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
         >
             <div className="container mx-auto px-6 w-full max-w-7xl h-16 flex items-center justify-between">
                 <button
-                    className="flex items-center gap-2.5 outline-none focus-visible:ring-2 ring-[#2E7D32]/20 rounded-lg group"
+                    className="flex   items-center gap-2.5 outline-none focus-visible:ring-2 ring-[#2E7D32]/20 rounded-lg group"
                     onClick={() => handleNavClick({ id: "top" })}
                     aria-label="Go to top"
                 >
-                    <img src={logo} alt="Logo" className="h-10 w-auto" />
+                    <img src={logo} alt="Logo" className="h-8 md:h-10 lg:10 w-auto" />
                 </button>
 
                 <nav className="hidden lg:flex items-center gap-1 bg-white/50 p-1 rounded-full border border-white/40 backdrop-blur-md shadow-sm" aria-label="Primary">
@@ -90,7 +90,7 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
                                 {isActive && (
                                     <motion.div
                                         layoutId="activeNav"
-                                        className="absolute inset-0 bg-white rounded-full shadow-[0_0_20px_rgba(34,197,94,0.35)]"
+                                        className="absolute inset-0 bg-white rounded-full shadow-[0_0_8px_rgba(34,197,94,0.6),0_0_25px_rgba(34,197,94,0.4)]"
                                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                                         style={{ zIndex: -1 }}
                                     />
@@ -110,7 +110,8 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
                     </button>
 
                     <button
-                        className="w-9 h-9 grid place-items-center rounded-lg border border-slate-200/50 hover:bg-white/50 lg:hidden text-slate-600 backdrop-blur-sm"
+                        id="mobile-menu-btn"
+                        className="w-9 h-9 grid place-items-center rounded-lg border border-slate-200/50 hover:bg-white/50 lg:hidden text-slate-600 backdrop-blur-sm z-50 relative"
                         aria-label={mobileOpen ? "Close menu" : "Open menu"}
                         onClick={() => setMobileOpen((v) => !v)}
                     >
@@ -119,26 +120,46 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
                 </div>
             </div>
 
-            {/* Glassmorphic Mobile menu */}
-            <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out border-b border-white/20 backdrop-blur-xl opacity-50 ${mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
-                    }`}
-            >
-                <div className="container mx-auto px-6 py-6 flex flex-col gap-1">
-                    {navLinks.map((l) => (
-                        <button
-                            key={l.label}
-                            className={`text-left px-4 py-3 rounded-xl font-medium transition-colors ${activeSection === l.id
-                                    ? "bg-green-50 text-green-700 font-semibold"
-                                    : "text-slate-700 hover:bg-slate-50"
-                                }`}
-                            onClick={() => handleNavClick(l)}
+            {/* Mobile Menu Overlay */}
+            <AnimatePresence>
+                {mobileOpen && (
+                    <>
+                        {/* Backdrop for clicking outside */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="fixed inset-x-0 bottom-0 top-16 bg-black/20 backdrop-blur-sm z-40 lg:hidden"
+                            onClick={() => setMobileOpen(false)}
+                        />
+
+                        {/* Menu Content */}
+                        <motion.div
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.2 }}
+                            className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-slate-100 shadow-2xl z-50 lg:hidden overflow-hidden"
+                            style={{ maxHeight: "85vh", overflowY: "auto" }}
                         >
-                            {l.label}
-                        </button>
-                    ))}
-                </div>
-            </div>
+                            <div className="container mx-auto px-6 py-6 flex flex-col gap-1">
+                                {navLinks.map((l) => (
+                                    <button
+                                        key={l.label}
+                                        className={`text-left px-4 py-3 rounded-xl font-medium transition-colors ${activeSection === l.id
+                                            ? "bg-green-50 text-green-700 font-semibold"
+                                            : "text-slate-700 hover:bg-slate-50"
+                                            }`}
+                                        onClick={() => handleNavClick(l)}
+                                    >
+                                        {l.label}
+                                    </button>
+                                ))}
+                            </div>
+                        </motion.div>
+                    </>
+                )}
+            </AnimatePresence>
         </header>
     );
 }

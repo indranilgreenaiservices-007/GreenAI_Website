@@ -37,83 +37,155 @@ export default function RegIntelFeature() {
     const activeTab = tabs.find((t) => t.key === active) || tabs[0];
 
     return (
-        <section id="regintel" className="py-24 bg-slate-50 relative overflow-hidden">
-            {/* Subtler background */}
-            <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(46,125,50,0.05),transparent_40%)]" aria-hidden="true"></div>
+        <>
+            <section id="regintel" className="hidden md:block py-24 bg-slate-50 relative overflow-hidden">
+                {/* Subtler background */}
+                <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(46,125,50,0.05),transparent_40%)]" aria-hidden="true"></div>
 
-            <div className="container mx-auto px-6 w-full max-w-7xl relative z-10">
-                <div className="flex flex-col items-center text-center gap-12 mb-10">
-                    <div className="max-w-2xl mb-5">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 bg-white text-slate-700 font-semibold text-xs tracking-wide uppercase mb-4 shadow-sm">
-                            <ShieldCheck size={14} />
-                            <span>RegIntel 360</span>
+                <div className="container mx-auto px-6 w-full max-w-7xl relative z-10">
+                    <div className="flex flex-col items-center text-center gap-12 mb-10">
+                        <div className="max-w-2xl mb-5">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 bg-white text-slate-700 font-semibold text-xs tracking-wide uppercase mb-4 shadow-sm">
+                                <ShieldCheck size={14} />
+                                <span>RegIntel 360</span>
+                            </div>
+                            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">
+                                Demonstrate Compliance Intelligence
+                            </h2>
+                            <p className="text-lg text-slate-600 leading-relaxed">
+                                An end-to-end ESG compliance operating system for SEBI’s BRSR / BRSR Core:
+                                workflow digitization, ERP + IoT integration, AI-assisted guidance, and audit-ready evidence trails.
+                            </p>
                         </div>
-                        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">
-                            Demonstrate Compliance Intelligence
-                        </h2>
-                        <p className="text-lg text-slate-600 leading-relaxed">
-                            An end-to-end ESG compliance operating system for SEBI’s BRSR / BRSR Core:
-                            workflow digitization, ERP + IoT integration, AI-assisted guidance, and audit-ready evidence trails.
-                        </p>
+                        <div className="flex flex-wrap justify-center gap-4 ml-auto">
+                            <div className="px-6 py-4 rounded-2xl bg-white border border-slate-200 shadow-sm text-center min-w-[120px]">
+                                <div className="text-3xl font-bold text-slate-900">70%</div>
+                                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Faster Reporting</div>
+                            </div>
+                            <div className="px-6 py-4 rounded-2xl bg-white border border-slate-200 shadow-sm text-center min-w-[120px]">
+                                <div className="text-3xl font-bold text-slate-900">100%</div>
+                                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Audit Ready</div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex gap-4 ml-auto">
-                        <div className="px-6 py-4 rounded-2xl bg-white border border-slate-200 shadow-sm text-center min-w-[120px]">
-                            <div className="text-3xl font-bold text-slate-900">70%</div>
-                            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Faster Reporting</div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-start">
+                        <div className="space-y-2 ">
+                            {tabs.map((t) => (
+                                <button
+                                    key={t.key}
+                                    className={` cursor-pointer w-full text-left p-4  rounded-xl transition-all duration-200 flex gap-4 items-start group ${t.key === active
+                                        ? "bg-white shadow-md border border-slate-200 ring-1 ring-slate-200/50"
+                                        : "hover:bg-slate-100/80 border border-transparent"
+                                        }`}
+                                    onClick={() => setActive(t.key)}
+                                >
+                                    <div className={`pt-1 transition-colors ${t.key === active ? "text-green-700" : "text-slate-400 group-hover:text-slate-600"}`}>
+                                        {t.icon}
+                                    </div>
+                                    <div>
+                                        <div className={`font-semibold text-sm ${t.key === active ? "text-slate-900" : "text-slate-600"}`}>
+                                            {t.title}
+                                        </div>
+                                        <div className="text-xs text-slate-500 mt-1 leading-relaxed">
+                                            {t.desc}
+                                        </div>
+                                    </div>
+                                </button>
+                            ))}
+
+                            <div className="mt-8 p-6 rounded-2xl bg-slate-900 text-slate-300 transform scale-95 opacity-80 mix-blend-multiply">
+                                <div className="flex items-center gap-2 font-semibold text-white mb-2">
+                                    <ShieldCheck size={16} /> Enterprise Security
+                                </div>
+                                <p className="text-xs leading-relaxed">
+                                    Role-based access control, encrypted logs, and on-premise deployment options available.
+                                </p>
+                            </div>
                         </div>
-                        <div className="px-6 py-4 rounded-2xl bg-white border border-slate-200 shadow-sm text-center min-w-[120px]">
-                            <div className="text-3xl font-bold text-slate-900">100%</div>
-                            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Audit Ready</div>
+
+                        <div className="rounded-3xl border border-slate-200 bg-white shadow-xl min-h-[500px] p-1 relative overflow-hidden">
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500"></div>
+                            <div className="p-8 h-full bg-slate-50/30 rounded-[22px]">
+                                {active === "esg" && <MockESG />}
+                                {active === "compliance" && <MockCompliance />}
+                                {active === "ops" && <MockOps />}
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-start">
-                    <div className="space-y-2 ">
+            {/* Mobile View */}
+            <section className="block md:hidden py-16 bg-slate-50 relative overflow-hidden">
+                <div className="container mx-auto px-4">
+
+                    {/* Header */}
+                    <div className="text-center mb-20">
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-100 text-green-800 text-[10px] font-bold uppercase tracking-wide mb-3">
+                            <ShieldCheck size={12} /> RegIntel 360
+                        </span>
+                        <h2 className="text-2xl font-bold text-slate-900 mb-3">
+                            Compliance Intelligence
+                        </h2>
+                        <p className="text-sm text-slate-600 leading-relaxed px-2">
+                            End-to-end ESG operating system for SEBI’s BRSR.
+                        </p>
+                    </div>
+
+                    {/* Dashboard Card Area */}
+                    <div className="relative mb-6">
+                        {/* Floating Stats Widgets (Top Right) */}
+                        <div className="absolute  -top-17 -right-1 z-20 flex flex-col gap-2">
+                            <div className="bg-slate-900 text-white px-3 py-2 rounded-xl shadow-lg border border-slate-700/50 backdrop-blur-md">
+                                <div className="text-lg font-bold leading-none">70%</div>
+                                <div className="text-[9px] font-medium opacity-80 uppercase">Faster</div>
+                            </div>
+                            <div className="bg-white text-slate-900 px-3 py-2 rounded-xl shadow-lg border border-slate-200">
+                                <div className="text-lg font-bold leading-none">100%</div>
+                                <div className="text-[9px] font-medium uppercase text-slate-500">Audit Ready</div>
+                            </div>
+                        </div>
+
+                        {/* Main Card */}
+                        <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden relative min-h-[480px]">
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500"></div>
+
+                            <div className="p-4 pt-8 bg-slate-50/50 h-full">
+                                {/* Render Mock Component - Scaled/Adjusted */}
+                                <div className="scale-95 origin-top-left w-[105%]">
+                                    {active === "esg" && <MockESG />}
+                                    {active === "compliance" && <MockCompliance />}
+                                    {active === "ops" && <MockOps />}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Tabs Row (Bottom) */}
+                    <div className="flex gap-2  pb-2 scrollbar-hide ">
                         {tabs.map((t) => (
                             <button
                                 key={t.key}
-                                className={` cursor-pointer w-full text-left p-4  rounded-xl transition-all duration-200 flex gap-4 items-start group ${t.key === active
-                                    ? "bg-white shadow-md border border-slate-200 ring-1 ring-slate-200/50"
-                                    : "hover:bg-slate-100/80 border border-transparent"
-                                    }`}
                                 onClick={() => setActive(t.key)}
+                                className={`flex-none snap-start px-4 py-3 rounded-xl border flex items-center gap-2.5 transition-all w-[30%] sm:w-auto ${active === t.key
+                                    ? "bg-slate-900 border-slate-900 text-white shadow-md"
+                                    : "bg-white border-slate-200 text-slate-600"
+                                    }`}
                             >
-                                <div className={`pt-1 transition-colors ${t.key === active ? "text-green-700" : "text-slate-400 group-hover:text-slate-600"}`}>
-                                    {t.icon}
+                                <div className={`${active === t.key ? "text-green-400" : "text-slate-400"}`}>
+                                    {React.cloneElement(t.icon, { size: 18 })}
                                 </div>
-                                <div>
-                                    <div className={`font-semibold text-sm ${t.key === active ? "text-slate-900" : "text-slate-600"}`}>
-                                        {t.title}
-                                    </div>
-                                    <div className="text-xs text-slate-500 mt-1 leading-relaxed">
-                                        {t.desc}
-                                    </div>
+                                <div className="text-left">
+                                    <div className="text-[10px] font-bold leading-tight">{t.title}</div>
                                 </div>
                             </button>
                         ))}
-
-                        <div className="mt-8 p-6 rounded-2xl bg-slate-900 text-slate-300 transform scale-95 opacity-80 mix-blend-multiply">
-                            <div className="flex items-center gap-2 font-semibold text-white mb-2">
-                                <ShieldCheck size={16} /> Enterprise Security
-                            </div>
-                            <p className="text-xs leading-relaxed">
-                                Role-based access control, encrypted logs, and on-premise deployment options available.
-                            </p>
-                        </div>
                     </div>
 
-                    <div className="rounded-3xl border border-slate-200 bg-white shadow-xl min-h-[500px] p-1 relative overflow-hidden">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500"></div>
-                        <div className="p-8 h-full bg-slate-50/30 rounded-[22px]">
-                            {active === "esg" && <MockESG />}
-                            {active === "compliance" && <MockCompliance />}
-                            {active === "ops" && <MockOps />}
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 }
 
@@ -145,7 +217,7 @@ function MockESG() {
                         Drill-down views with heatmaps, maturity indicators, and year-on-year narratives—ready for executive review.
                     </div>
 
-                    <div className="grid grid-cols-3 gap-2.5 mt-2.5">
+                    <div className="grid grid-cols-1 xs:grid-cols-3 sm:grid-cols-3 gap-2.5 mt-2.5 ">
                         <div className="rounded-[16px] border border-slate-900/10 bg-white/75 p-2.5">
                             <div className="font-[950] text-[#0b3a1f]">70%</div>
                             <div className="text-[#5d6b6a] text-xs mt-1">Time Reduction</div>
