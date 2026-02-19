@@ -147,14 +147,17 @@ const features = [
 
 export default function Hero({ onPrimary, onSecondary }) {
     const [activeIdx, setActiveIdx] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
 
     // Auto-swipe functionality
     useEffect(() => {
-        const interval = setInterval(() => {
-            setActiveIdx((prev) => (prev + 1) % features.length);
-        }, 5600); // 5s hold + 0.8s transition
-        return () => clearInterval(interval);
-    }, []);
+        if (!isHovered) {
+            const interval = setInterval(() => {
+                setActiveIdx((prev) => (prev + 1) % features.length);
+            }, 3600); // 5s hold + 0.8s transition
+            return () => clearInterval(interval);
+        }
+    }, [isHovered]);
 
     return (
         <section id="home" className="relative  lg:py-25 overflow-hidden">
@@ -232,7 +235,11 @@ export default function Hero({ onPrimary, onSecondary }) {
                     <div className="relative w-full max-w-[420px]">
 
                         {/* Card Container */}
-                        <div className="relative w-full h-[540px] mb-6">
+                        <div
+                            className="relative w-full h-[540px] mb-6"
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                        >
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={activeIdx}

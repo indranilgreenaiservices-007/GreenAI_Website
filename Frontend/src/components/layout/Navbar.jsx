@@ -70,7 +70,7 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
         >
             <div className="container mx-auto px-6 w-full max-w-7xl h-16 flex items-center justify-between">
                 <button
-                    className="flex   items-center gap-2.5 outline-none focus-visible:ring-2 ring-[#2E7D32]/20 rounded-lg group"
+                    className="flex   items-center gap-2.5 outline-none focus-visible:ring-2 ring-[#2E7D32]/20 rounded-lg group cursor-pointer"
                     onClick={() => handleNavClick({ id: "top" })}
                     aria-label="Go to top"
                 >
@@ -83,7 +83,7 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
                         return (
                             <button
                                 key={l.label}
-                                className={`relative px-4 py-1.5 rounded-full text-[13px] font-medium transition-colors duration-200 z-10 ${isActive ? "text-slate-900" : "text-slate-500 hover:text-slate-900"
+                                className={`relative px-4 py-1.5 rounded-full text-[13px] font-medium transition-colors duration-200 z-10 cursor-pointer ${isActive ? "text-slate-900" : "text-slate-500 hover:text-slate-900"
                                     }`}
                                 onClick={() => handleNavClick(l)}
                             >
