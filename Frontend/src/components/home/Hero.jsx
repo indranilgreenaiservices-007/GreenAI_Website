@@ -154,7 +154,7 @@ export default function Hero({ onPrimary, onSecondary }) {
         if (!isHovered) {
             const interval = setInterval(() => {
                 setActiveIdx((prev) => (prev + 1) % features.length);
-            }, 3600); // 5s hold + 0.8s transition
+            }, 3600); // 3s hold + 0.6s transition
             return () => clearInterval(interval);
         }
     }, [isHovered]);
