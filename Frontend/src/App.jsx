@@ -4,6 +4,7 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import ContactUs from "./components/home/ContactUs";
 import Hero from "./components/home/Hero";
+import AuthenticityStrip from "./components/home/AuthenticityStrip";
 import WhatWeDo from "./components/home/WhatWeDo";
 import Philosophy from "./components/home/Philosophy";
 import ActiveBackground from "./components/layout/ActiveBackground";
@@ -11,12 +12,13 @@ import RegIntelFeature from "./components/home/RegIntelFeature";
 import Ecosystem from "./components/home/Ecosystem";
 import Academy from "./components/home/Academy";
 import Career from "./components/home/Career";
-import Blogs from "./components/home/Blogs";
+import Media from "./components/home/Media";
 import TrustedBy from "./components/home/TrustedBy";
 import WhyChoose from "./components/home/WhyChoose";
 import FAQ from "./components/home/FAQ";
 import BlogPost from "./pages/BlogPost";
 import AllBlogs from "./pages/AllBlogs";
+import Insights from "./components/home/Insights";
 
 /**
  * GreenAI Services — Single-file React corporate website (Refactored)
@@ -44,7 +46,8 @@ const Layout = ({ children }) => {
     if (location.state && location.state.scrollTo) {
       const el = document.getElementById(location.state.scrollTo);
       if (el) {
-        setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 100);
+        // Use a small timeout to ensure DOM is ready but use 'instant' behavior to avoid visible scrolling
+        setTimeout(() => el.scrollIntoView({ behavior: "instant", block: "start" }), 10);
       }
       // Clear state to avoid scrolling on refresh
       window.history.replaceState({}, document.title)
@@ -105,14 +108,16 @@ function HomePage() {
         onPrimary={() => scroll("regintel")}
         onSecondary={() => scroll("solutions")}
       />
-      <WhatWeDo />
+      <AuthenticityStrip />
       <Philosophy />
+      <WhatWeDo />
       <Ecosystem />
       <RegIntelFeature />
       <Academy onContactClick={() => scroll("contact")} />
       <TrustedBy />
       <Career />
-      <Blogs />
+      <Media />
+      <Insights />
       <FAQ />
       <ContactUs />
     </>
@@ -124,8 +129,8 @@ export default function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blogs" element={<AllBlogs />} />
-        <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/media-events" element={<AllBlogs />} />
+        <Route path="/media-events/:id" element={<BlogPost />} />
       </Routes>
     </Layout>
   );

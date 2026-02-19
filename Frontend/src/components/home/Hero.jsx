@@ -60,7 +60,7 @@ const features = [
                 </div>
 
                 {/* Description Panel */}
-                <div className="bg-white/80 rounded-xl p-4 text-xs text-slate-600 border border-blue-100 text-center w-full leading-relaxed backdrop-blur-sm shadow-sm">
+                <div className="bg-white/80 rounded-xl p-4 text-xs lg:text-[15px] text-slate-600 border border-blue-100 text-center w-full leading-relaxed backdrop-blur-sm shadow-sm">
                     <span className="font-bold text-blue-700 block mb-1">
                         Speech → Translate → Speak
                     </span>
@@ -135,14 +135,67 @@ const features = [
                 </div>
 
                 {/* Text Desc */}
-                <div className="bg-slate-50/80 rounded-xl p-4 text-xs text-slate-600 border border-slate-300 text-center w-full leading-relaxed backdrop-blur-sm">
+                <div className="bg-slate-50/80 rounded-xl p-4 text-xs lg:text-[15px] text-slate-600 border border-slate-300 text-center w-full leading-relaxed backdrop-blur-sm">
                     <span className="font-bold text-emerald-700 block mb-1">End-to-End Automation</span>
                     Ingest data from <strong>IoT sensors & Manual logs</strong>, process via <strong>AI</strong>, and generate <strong>Audit-Ready</strong> BRSR reports instantly.
                 </div>
             </div>
         ),
-    }
+    },
+    {
+        id: "vidhilab",
+        title: "VidhiLab",
+        subtitle: "Intelligent Legal Support & Compliance",
+        icon: <Scale size={20} />,
+        color: "text-purple-600",
+        bg: "bg-purple-50",
+        border: "border-purple-200",
+        visual: () => (
+            <div className="w-full h-full flex flex-col justify-center items-center gap-5 p-4">
+                {/* Central AI Brain */}
+                <div className="relative">
+                    <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center p-1 relative z-10">
+                        <Scale size={32} className="text-purple-600" />
+                        <motion.div
+                            className="absolute inset-0 border-2 border-purple-400 rounded-full"
+                            animate={{ scale: [1, 1.2], opacity: [0.8, 0] }}
+                            transition={{ duration: 2, repeat: Infinity }}
+                        />
+                    </div>
+                    {/* Connecting Lines */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[1px] bg-purple-200 -z-0 rotate-45" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[1px] bg-purple-200 -z-0 -rotate-45" />
+                </div>
 
+                {/* Features Grid */}
+                <div className="grid grid-cols-2 gap-3 w-full">
+                    {[
+                        { icon: <Database size={14} />, text: "RAG & NLP" },
+                        { icon: <Mic size={14} />, text: "Voice & Text" },
+                        { icon: <Scan size={14} />, text: "7+ Languages" },
+                        { icon: <FileText size={14} />, text: "Tender Mgmt" }
+                    ].map((item, i) => (
+                        <motion.div
+                            key={i}
+                            className="flex items-center gap-2 bg-white border border-purple-100 p-2 rounded-lg shadow-sm"
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: i * 0.1 }}
+                        >
+                            <span className="text-purple-500">{item.icon}</span>
+                            <span className="text-[10px] font-semibold text-slate-600">{item.text}</span>
+                        </motion.div>
+                    ))}
+                </div>
+
+                {/* Description */}
+                <div className="bg-purple-50/80 rounded-xl p-3 text-xs lg:text-[15px] text-slate-600 border border-purple-100 text-center w-full leading-relaxed backdrop-blur-sm">
+                    <span className="font-bold text-purple-700 block mb-0.5">AI Legal Assistant for Indian Law</span>
+                    Conversational advisory powered by real-time knowledge base.
+                </div>
+            </div>
+        )
+    }
 ];
 
 export default function Hero({ onPrimary, onSecondary }) {
@@ -393,7 +446,7 @@ export default function Hero({ onPrimary, onSecondary }) {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                     >
-                        <div className="relative h-[400px] rounded-3xl
+                        <div className="relative h-[435px] rounded-3xl
       bg-white/70 backdrop-blur-xl
       border border-white/40
       p-5 flex flex-col justify-between

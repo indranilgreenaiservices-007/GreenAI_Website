@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { Leaf, Calendar, User, ArrowRight } from "lucide-react";
+import { Leaf, Calendar, User, ArrowRight, Newspaper } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 // Importing images from the correct location
@@ -97,18 +97,18 @@ export default function Blogs() {
     }, []);
 
     return (
-        <section id="blogs" className="py-24 bg-slate-50 relative">
+        <section id="media" className="py-24 bg-slate-50 relative">
             <div className="container mx-auto px-6 w-full max-w-7xl">
                 <div className="mb-12 max-w-3xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-100 bg-blue-50 text-blue-700 font-semibold text-xs tracking-wide uppercase mb-4 shadow-sm">
-                        <Leaf size={12} />
-                        Insights & Updates
+                        <Newspaper size={12} />
+                        Media & Updates
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
-                        GreenAI Insights
+                        GreenAI Media & Updates
                     </h2>
                     <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                        Stay updated with the latest trends in sustainable AI, industry partnerships, and our company news.
+                        Explore our latest press releases, company announcements, media coverage, and key updates highlighting .
                     </p>
                 </div>
 
@@ -117,7 +117,7 @@ export default function Blogs() {
                         <div
                             key={article.id}
                             className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group flex flex-col h-full cursor-pointer"
-                            onClick={() => navigate(`/blog/${article.id}`)}
+                            onClick={() => navigate(`/media-events/${article.id}`)}
                         >
                             <div className="h-48 overflow-hidden relative">
                                 <img
@@ -141,7 +141,7 @@ export default function Blogs() {
                                     {article.excerpt}
                                 </p>
                                 <div className="flex items-center text-blue-600 font-bold text-xs group-hover:translate-x-1 transition-transform">
-                                    Read Article <ArrowRight size={14} className="ml-1" />
+                                    Read News <ArrowRight size={14} className="ml-1" />
                                 </div>
                             </div>
                         </div>
@@ -150,10 +150,10 @@ export default function Blogs() {
 
                 <div className="text-center">
                     <Link
-                        to="/blogs"
+                        to="/media-events"
                         className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white border border-slate-200 text-slate-700 font-semibold shadow-sm hover:bg-slate-50 hover:border-slate-300 transition-all hover:-translate-y-0.5"
                     >
-                        View All News & Insights <ArrowRight size={16} />
+                        View All Media & News <ArrowRight size={16} />
                     </Link>
                 </div>
             </div>

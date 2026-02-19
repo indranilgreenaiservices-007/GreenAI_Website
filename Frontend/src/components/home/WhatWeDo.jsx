@@ -5,14 +5,14 @@ import { PenTool, Code2, ShieldCheck, Rocket, RefreshCw } from "lucide-react";
 const steps = [
     {
         id: 1,
-        title: "Architect",
+        title: "Planning",
         description: "Design future-ready systems for smarter solutions.",
         icon: <PenTool className="w-8 h-8 text-white" />,
         color: "from-blue-500 to-cyan-400",
     },
     {
         id: 2,
-        title: "Engineer + Modernize",
+        title: "Engineer",
         description: "Build innovative software, optimize infra for peak performance.",
         icon: <Code2 className="w-8 h-8 text-white" />,
         color: "from-indigo-500 to-purple-400",

@@ -12,14 +12,16 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
     const navLinks = useMemo(
         () => [
             { id: "home", label: "Home" },
-            { id: "what-we-do", label: "What We Do" },
             { id: "philosophy", label: "Philosophy" },
+            { id: "what-we-do", label: "What We Do" },
+
             { id: "solutions", label: "Solutions" },
-            { id: "regintel", label: "RegIntel 360" },
             { id: "academy", label: "Academy" },
             { id: "career", label: "Career" },
-            { id: "blogs", label: "Blogs" },
-            { id: "contact", label: "Contact Us" },
+            { id: "media", label: "Media" },
+            { id: "insights", label: "Insights" }
+
+
         ],
         []
     );

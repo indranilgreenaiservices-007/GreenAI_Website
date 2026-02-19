@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, Clock } from 'lucide-react';
-import { articles } from '../components/home/Blogs'; // Import data from Blogs component
+import { articles } from '../components/home/Media'; // Import data from Blogs component
 import ActiveBackground from '../components/layout/ActiveBackground';
 import Footer from '../components/layout/Footer';
 import Navbar from '../components/layout/Navbar';
@@ -36,7 +36,7 @@ export default function BlogPost() {
             <div className="pt-24 pb-24">
                 <article className="container mx-auto px-6 w-full max-w-4xl">
                     <div className="mb-8">
-                        <Link to="/blogs" className="text-blue-600 text-sm font-semibold hover:underline mb-4 inline-block">← Back to Insights</Link>
+                        <Link to="/media-events" className="text-blue-600 text-sm font-semibold hover:underline mb-4 inline-block">← Back to Media</Link>
                         <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
                             {article.title}
                         </h1>
@@ -54,11 +54,11 @@ export default function BlogPost() {
                         </div>
                     </div>
 
-                    <div className="relative w-full rounded-2xl overflow-hidden shadow-xl mb-12 bg-white border border-slate-100">
+                    <div className="relative w-full rounded-2xl overflow-hidden shadow-lg mb-10 bg-slate-50 border border-slate-100 flex justify-center">
                         <img
                             src={article.image}
                             alt={article.title}
-                            className="w-full h-auto object-cover max-h-[500px]"
+                            className="w-auto h-auto max-h-[80vh] object-contain"
                         />
                     </div>
 

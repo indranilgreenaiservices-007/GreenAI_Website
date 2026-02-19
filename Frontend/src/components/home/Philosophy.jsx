@@ -85,6 +85,8 @@ export default function Philosophy() {
                             <span className="text-xs font-bold px-3 py-1.5 bg-green-100 border border-green-200 rounded-full text-green-800">Edge-native</span>
                             <span className="text-xs font-bold px-3 py-1.5 bg-green-100 border border-green-200 rounded-full text-green-800">Low-energy</span>
                             <span className="text-xs font-bold px-3 py-1.5 bg-green-100 border border-green-200 rounded-full text-green-800">Inclusive</span>
+                            <span className="text-xs font-bold px-3 py-1.5 bg-green-100 border border-green-200 rounded-full text-green-800">Sovereign AI</span>
+
                         </div>
                     </div>
                 </div>
