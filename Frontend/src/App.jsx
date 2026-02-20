@@ -22,7 +22,7 @@ import AllBlogs from "./pages/AllBlogs";
 import Insights from "./components/home/Insights";
 import GAIPortal from "./components/AdminPortal/GAIPortal";
 import AdminPanel from "./components/AdminPortal/AdminPanel";
-import Login from "./pages/Gailogin";
+import Login from "./pages/GAIlogin";
 
 // HR Portal Components
 import HRDashboard from "./components/HRPortal/HRDashboard";
