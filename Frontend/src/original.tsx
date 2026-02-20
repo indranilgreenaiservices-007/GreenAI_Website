@@ -283,7 +283,7 @@
 //               />
 
 //               <TiltCard
-//                 title="Bhasantor (CLiCS)"
+//                 title="CLiCS (CLiCS)"
 //                 subtitle="Voice AI Stack for Indic Languages"
 //                 icon={<Mic size={18} />}
 //                 tone="green"

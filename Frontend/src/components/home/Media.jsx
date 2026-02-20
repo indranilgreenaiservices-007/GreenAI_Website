@@ -112,11 +112,12 @@ export default function Blogs() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    {visibleArticles.map((article) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    {visibleArticles.map((article, index) => (
                         <div
                             key={article.id}
-                            className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group flex flex-col h-full cursor-pointer"
+                            className={`bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group flex flex-col h-full cursor-pointer ${index >= 2 ? "hidden md:flex" : "flex"
+                                }`}
                             onClick={() => navigate(`/media-events/${article.id}`)}
                         >
                             <div className="h-48 overflow-hidden relative">

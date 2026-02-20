@@ -1,14 +1,15 @@
+
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate, Navigate, Outlet } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import ContactUs from "./components/home/ContactUs";
 import Hero from "./components/home/Hero";
 import AuthenticityStrip from "./components/home/AuthenticityStrip";
-import WhatWeDo from "./components/home/WhatWeDo";
 import Philosophy from "./components/home/Philosophy";
+import WhatWeDo from "./components/home/WhatWeDo";
+import AboutUs from "./components/home/AboutUs";
 import ActiveBackground from "./components/layout/ActiveBackground";
-import RegIntelFeature from "./components/home/RegIntelFeature";
 import Ecosystem from "./components/home/Ecosystem";
 import Academy from "./components/home/Academy";
 import Career from "./components/home/Career";
@@ -19,6 +20,18 @@ import FAQ from "./components/home/FAQ";
 import BlogPost from "./pages/BlogPost";
 import AllBlogs from "./pages/AllBlogs";
 import Insights from "./components/home/Insights";
+import GAIPortal from "./components/AdminPortal/GAIPortal";
+import AdminPanel from "./components/AdminPortal/AdminPanel";
+import Login from "./pages/Gailogin";
+
+// HR Portal Components
+import HRDashboard from "./components/HRPortal/HRDashboard";
+import Dashboard from "./components/HRPortal/Dashboard";
+import Employees from "./components/HRPortal/Employees";
+import Jobs from "./components/HRPortal/Jobs";
+import Applicants from "./components/HRPortal/Applicants";
+import Interviews from "./components/HRPortal/Interviews";
+import Settings from "./components/HRPortal/Settings";
 
 /**
  * GreenAI Services — Single-file React corporate website (Refactored)
@@ -90,13 +103,6 @@ const Layout = ({ children }) => {
 
 // Simplified HomePage component containing only the landing page sections
 function HomePage() {
-  // We need to access the scrollToId function from context or pass it down?
-  // Actually the Hero buttons call scrollToId. 
-  // For now, let's redefine a local helper or use the one from Layout via context if we convert Layout to provide context.
-  // simpler: Pass content that doesn't need props, or use standard anchors.
-
-  // The Hero component calls onPrimary/onSecondary.
-  // Let's use a small helper hook or just document.getElementById since we are on the page.
   const scroll = (id) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -105,14 +111,14 @@ function HomePage() {
   return (
     <>
       <Hero
-        onPrimary={() => scroll("regintel")}
-        onSecondary={() => scroll("solutions")}
+        onPrimary={() => scroll("solutions")}
+        onSecondary={() => scroll("contact")}
       />
       <AuthenticityStrip />
+      <AboutUs />
       <Philosophy />
-      <WhatWeDo />
       <Ecosystem />
-      <RegIntelFeature />
+      <WhatWeDo />
       <Academy onContactClick={() => scroll("contact")} />
       <TrustedBy />
       <Career />
@@ -124,14 +130,76 @@ function HomePage() {
   );
 }
 
+// Protected Route Wrapper
+const RequireAuth = ({ children }) => {
+  const token = localStorage.getItem('employeeToken');
+  if (!token) {
+    return <Navigate to="/login" replace />;
+  }
+  return children;
+};
+
+// Admin Only Route Wrapper
+const RequireAdmin = ({ children }) => {
+  const token = localStorage.getItem('employeeToken');
+  const userStr = localStorage.getItem('employeeUser');
+  let user = null;
+  if (userStr) {
+    try {
+      user = JSON.parse(userStr);
+    } catch (e) {
+      console.error("Failed to parse user", e);
+    }
+  }
+
+  if (!token || !user || user.role !== 'admin') {
+    return <Navigate to="/gai-portal" replace />;
+  }
+  return children;
+};
+
+const PublicLayoutWrapper = () => (
+  <Layout>
+    <Outlet />
+  </Layout>
+);
+
 export default function App() {
   return (
-    <Layout>
-      <Routes>
+    <Routes>
+      {/* Public Routes - Wrapped in Layout */}
+      <Route element={<PublicLayoutWrapper />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/media-events" element={<AllBlogs />} />
         <Route path="/media-events/:id" element={<BlogPost />} />
-      </Routes>
-    </Layout>
+        <Route path="/login" element={<Login />} />
+
+        {/* GAIPortal & AdminPanel inside Public Layout for now (or move out if needed) */}
+        <Route path="/gai-portal" element={
+          <RequireAuth>
+            <GAIPortal />
+          </RequireAuth>
+        } />
+        <Route path="/gai-portal/admin" element={
+          <RequireAdmin>
+            <AdminPanel />
+          </RequireAdmin>
+        } />
+      </Route>
+
+      {/* HR Portal Routes - Completely Separate Layout (Sidebar based) */}
+      <Route path="/gai-portal/hr" element={
+        <RequireAuth>
+          <HRDashboard />
+        </RequireAuth>
+      }>
+        <Route index element={<Dashboard />} />
+        <Route path="employees" element={<Employees />} />
+        <Route path="jobs" element={<Jobs />} />
+        <Route path="applicants" element={<Applicants />} />
+        <Route path="interviews" element={<Interviews />} />
+        <Route path="settings" element={<Settings />} />
+      </Route>
+    </Routes>
   );
 }

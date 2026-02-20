@@ -4,11 +4,8 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
     {
         q: "How does GreenAI ensure data privacy and security?",
-        a: "We adopt a privacy-by-design approach. Our edge-native models process data locally on your premises or private cloud, minimizing external data transfer. For cloud deployments, we use enterprise-grade encryption and strict role-based access controls (RBAC).",
-    },
-    {
-        q: "Can RegIntel 360 integrate with our existing ERP?",
-        a: "Yes. RegIntel 360 is built with API-first architecture, allowing seamless integration with SAP, Oracle, Microsoft Dynamics, and custom ERPs to auto-fetch procurement, energy, and HR data for BRSR reporting.",
+        a: "GreenAI adopts a privacy-by-design framework across all deployments. Our edge-native architecture enables on-premise or private cloud processing, minimizing unnecessary data exposure. For cloud environments, we implement encrypted communication protocols, secure storage practices, and strict role-based access controls (RBAC). GreenAI is certified under ISO 9001:2015 for Quality Management and ISO/IEC 27001:2013 for Information Security Management, ensuring structured governance and robust data protection practices."
+
     },
     {
         q: "What makes your AI 'sustainable'?",
@@ -16,7 +13,11 @@ const faqs = [
     },
     {
         q: "Do you support regional Indian languages?",
-        a: "Absolutely. Our Bhasantor (CLiCS) stack is specifically engineered for Indic languages, supporting nuances, dialects, and mixed-language (code-switching) scenarios common in Indian business contexts.",
+        a: "Absolutely. Our CLiCS (CLiCS) stack is specifically engineered for Indic languages, supporting nuances, dialects, and mixed-language (code-switching) scenarios common in Indian business contexts.",
+    },
+    {
+        q: "Can RegIntel 360 integrate with our existing ERP?",
+        a: "Yes. RegIntel 360 is built with API-first architecture, allowing seamless integration with SAP, Oracle, Microsoft Dynamics, and custom ERPs to auto-fetch procurement, energy, and HR data for BRSR reporting.",
     },
     {
         q: "Is your platform audit-ready for SEBI compliance?",
@@ -44,8 +45,8 @@ export default function FAQ() {
                         <div
                             key={i}
                             className={`border rounded-2xl transition-all duration-300 overflow-hidden ${openIndex === i
-                                    ? "border-green-600/30 bg-green-50/30 shadow-sm"
-                                    : "border-slate-200 bg-white hover:border-slate-300"
+                                ? "border-green-600/30 bg-green-50/30 shadow-sm"
+                                : "border-slate-200 bg-white hover:border-slate-300"
                                 }`}
                         >
                             <button
@@ -60,8 +61,8 @@ export default function FAQ() {
                                 </span>
                                 <span
                                     className={`p-2 rounded-full transition-colors ${openIndex === i
-                                            ? "bg-green-200 text-green-800"
-                                            : "bg-slate-100 text-slate-500"
+                                        ? "bg-green-200 text-green-800"
+                                        : "bg-slate-100 text-slate-500"
                                         }`}
                                 >
                                     {openIndex === i ? <Minus size={20} /> : <Plus size={20} />}

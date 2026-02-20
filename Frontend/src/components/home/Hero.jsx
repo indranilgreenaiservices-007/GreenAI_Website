@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const features = [
     {
-        id: "bhasantor",
-        title: "Bhasantor",
+        id: "CLiCS",
+        title: "CLiCS",
         subtitle: "Voice AI Stack for Indic Languages",
         icon: <Mic size={20} />,
         color: "text-blue-600",
@@ -173,7 +173,7 @@ const features = [
                         { icon: <Database size={14} />, text: "RAG & NLP" },
                         { icon: <Mic size={14} />, text: "Voice & Text" },
                         { icon: <Scan size={14} />, text: "7+ Languages" },
-                        { icon: <FileText size={14} />, text: "Tender Mgmt" }
+                        { icon: <FileText size={14} />, text: "Tenders" }
                     ].map((item, i) => (
                         <motion.div
                             key={i}
@@ -198,6 +198,55 @@ const features = [
     }
 ];
 
+const FloatingSyllables = () => {
+    const syllables = [
+        "हि", "পা", "বা", "অস", "বো", "মণি", "ला", "ગુ", "मा", "ଓଡ଼ି", "த", "తె", "ಕ", "ಮ", "पं", "कु", "को","ꯀ", "ꯁ", "ꯃ","অ", "মি", "ষ","ভ", "লো","Ch", "Ṭ", "Sü","ᰀ", "ᰛ", "ᰣ"
+    ];
+
+    return (
+        <div className="absolute inset-0 overflow-hidden pointer-events-none select-none -z-0">
+            {[...Array(syllables.length)].map((_, i) => {
+                const char = syllables[i];
+                // Using a deterministic way to spread characters across the screen 
+                // while keeping it simplified without heavy random calls on render
+                const left = (i * 137.5) % 100; // Golden angle inspired spread
+                const duration = 10 + (i * 3) % 20;
+                const delay = i * 2;
+                const size = 50 + (i * 12) % 100;
+
+                return (
+                    <motion.div
+                        key={i}
+                        className="absolute font-bold text-emerald-900/[0.06] flex items-center justify-center p-4"
+                        style={{
+                            left: `${left}%`,
+                            fontSize: `${size}px`,
+                            bottom: "-22%",
+                            fontFamily: "'Noto Sans', sans-serif",
+                            
+                        }}
+                        initial={{ y: 0, opacity: 10, rotate: 0, scale: 0.6 }}
+                        animate={{
+                            y: "-200vh", 
+                            opacity: [2, 3, 5, 3, 2],
+                            rotate: [0, 20, -20, 0],
+                            scale: [0.6, 0.8, 1.1, 0.8, 0]
+                        }}
+                        transition={{
+                            duration: duration,
+                            repeat: Infinity,
+                            delay: delay,
+                            ease: "linear"
+                        }}
+                    >
+                        {char}
+                    </motion.div>
+                );
+            })}
+        </div>
+    );
+};
+
 export default function Hero({ onPrimary, onSecondary }) {
     const [activeIdx, setActiveIdx] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
@@ -217,6 +266,7 @@ export default function Hero({ onPrimary, onSecondary }) {
             <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
                 <div className="absolute w-[600px] h-[600px] rounded-full blur-3xl opacity-30 -left-[200px] -top-[300px] bg-[radial-gradient(circle_at_center,rgba(46,125,50,0.4),rgba(255,255,255,0))]" />
                 <div className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-20 -right-[150px] -top-[200px] bg-[radial-gradient(circle_at_center,rgba(46,125,50,0.3),rgba(255,255,255,0))]" />
+                <FloatingSyllables />
             </div>
 
             {/* desktop view */}
@@ -228,8 +278,24 @@ export default function Hero({ onPrimary, onSecondary }) {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
+
+
+                    <motion.div
+                        animate={{ y: [0, -10, 0] }}
+                        transition={{
+                            duration: 3,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                        }}
+                        className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-green-200 bg-green-50 text-green-800 font-bold text-[15px] tracking-wide mb-6 shadow-sm w-fit"
+                    >
+
+                        <span>GREENAI's</span>
+                    </motion.div>
+
+
                     <h1 className="text-6xl text-left font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6">
-                        Sustainable AI for <span className="text-green-700">Enterprise</span> & <span className="text-slate-800">Government</span>
+                        Sovereign AI for <span className="text-green-700">Enterprise</span> , <span className="text-slate-800">Government</span> & <span className="text-slate-800">People</span>
                     </h1>
 
                     <p className="text-lg leading-relaxed text-slate-600 mb-8 max-w-xl">
@@ -261,20 +327,20 @@ export default function Hero({ onPrimary, onSecondary }) {
                             hover:shadow-2xl hover:shadow-slate-900/30 hover:-translate-y-1
                             transition-all duration-300 group"
                         >
-                            Discover
+                            See Solutions
                             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                         </button>
 
-                        <button
+                        {/* <button
                             onClick={onSecondary}
                             className="inline-flex justify-center items-center gap-2 px-8 py-4 rounded-2xl font-bold 
                             bg-white/80 backdrop-blur-md border border-slate-200 
                             text-slate-700 text-base shadow-lg hover:shadow-xl hover:bg-white hover:-translate-y-1
                             transition-all duration-300 group"
                         >
-                            Explore
+                            Reach Us
                             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                        </button>
+                        </button> */}
                     </div>
                 </motion.div>
 
@@ -335,9 +401,9 @@ export default function Hero({ onPrimary, onSecondary }) {
                                         </div>
 
                                         <h3 className="text-xl font-extrabold text-slate-900 leading-tight mb-2 flex items-center gap-3">
-                                            <div className={`p-2 rounded-xl ${features[activeIdx].bg} shadow-sm ring-1 ring-black/5`}>
+                                            {/* <div className={`p-2 rounded-xl ${features[activeIdx].bg} shadow-sm ring-1 ring-black/5`}>
                                                 {React.cloneElement(features[activeIdx].icon, { size: 20 })}
-                                            </div>
+                                            </div> */}
                                             {features[activeIdx].title}
                                         </h3>
                                         <p className="text-sm font-medium text-slate-500 leading-relaxed">
@@ -378,7 +444,7 @@ export default function Hero({ onPrimary, onSecondary }) {
 
 
                 {/* Content Container */}
-                <div className="relative z-10 container mx-auto px-6 pt-23 pb-10 space-y-10">
+                <div className="relative z-10 container mx-auto px-6 pt-16 pb-10 space-y-10">
 
                     {/* Header + Subtext + Tags + Buttons */}
                     <motion.div
@@ -389,10 +455,26 @@ export default function Hero({ onPrimary, onSecondary }) {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
 
-                        <h1 className="text-5xl font-extrabold text-slate-900 leading-[1.2] tracking-tight mb-9">
-                            Sustainable AI for{" "}
-                            <span className="text-green-700">Enterprise</span> &{" "}
-                            <span className="text-slate-800">Government</span>
+
+                        <motion.div
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{
+                                duration: 3,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }}
+                            className="inline-flex -ml-50 items-center gap-2 px-4 py-1 rounded-full border border-green-200 bg-green-50 text-green-800 font-bold text-[15px] tracking-wide mb-6 shadow-sm"
+                        >
+
+                            <span>GREENAI'S</span>
+                        </motion.div>
+
+
+                        <h1 className="text-5xl font-extrabold text-slate-900 leading-[1.2] tracking-tight mb-6">
+                            Sovereign AI for{" "}
+                            <span className="text-green-700">Enterprise</span> ,{" "}
+                            <span className="text-slate-800">Government</span> &{" "}
+                            <span className="text-slate-800">People</span>
                         </h1>
 
                         <p className="text-[18px] leading-relaxed text-slate-600 max-w-sm mb-9">
@@ -423,7 +505,7 @@ export default function Hero({ onPrimary, onSecondary }) {
         transition-all active:scale-95 hover:shadow-lg"
                                 onClick={onPrimary}
                             >
-                                Discover <ArrowRight size={14} />
+                                See Solutions <ArrowRight size={14} />
                             </button>
 
                             <button
@@ -433,7 +515,7 @@ export default function Hero({ onPrimary, onSecondary }) {
         transition-all active:scale-95 hover:bg-white"
                                 onClick={onSecondary}
                             >
-                                Explore <ArrowRight size={14} />
+                                Reach Us <ArrowRight size={14} />
                             </button>
                         </div>
                     </motion.div>

@@ -12,7 +12,7 @@ const steps = [
     },
     {
         id: 2,
-        title: "Engineer",
+        title: "Engineering",
         description: "Build innovative software, optimize infra for peak performance.",
         icon: <Code2 className="w-8 h-8 text-white" />,
         color: "from-indigo-500 to-purple-400",
@@ -82,7 +82,7 @@ const WhatWeDo = () => {
                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-3 bg-white blur-[5px] rounded-full" />
                     </motion.div>
 
-                    <div className="space-y-12 md:space-y-24">
+                    <div className="space-y-12 md:space-y-6">
                         {steps.map((step, index) => (
                             <TimelineItem key={step.id} step={step} index={index} />
                         ))}
@@ -178,7 +178,7 @@ const TimelineItem = ({ step, index }) => {
             <div className="flex-1 pt-8 md:pt-0 pl-8 md:pl-0">
                 <div
                     className={`bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300 relative 
-        ${isEven ? "md:ml-12 md:text-left" : "md:mr-12 md:text-right"}`}
+        ${isEven ? "md:ml-6 md:text-left" : "md:mr-6 md:text-right"}`}
                 >
                     <div
                         className={`absolute top-1/2 w-4 h-4 bg-white border border-slate-100 transform -translate-y-1/2 rotate-45 hidden md:block 

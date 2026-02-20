@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, Clock } from 'lucide-react';
 import { articles } from '../components/home/Media'; // Import data from Blogs component
 import ActiveBackground from '../components/layout/ActiveBackground';
@@ -14,11 +14,24 @@ export default function BlogPost() {
     const { id } = useParams();
     const articleId = Number(id);
     const article = articles[articleId];
+    const location = useLocation();
+    const navigate = useNavigate();
 
     // Helper inside component to scroll top on mount
     React.useEffect(() => {
         window.scrollTo(0, 0);
     }, [id]);
+
+    const handleBack = (e) => {
+        e.preventDefault();
+        // Check if user came from 'media-events' (pagination) or elsewhere
+        if (location.state?.from === 'media-events') {
+            navigate(-1); // Go back to history (preserves page numbers)
+        } else {
+            // Direct access or from home, go to Home Media Section
+            navigate('/', { state: { scrollTo: "media" } });
+        }
+    };
 
     if (!article) {
         return (
@@ -34,9 +47,14 @@ export default function BlogPost() {
     return (
         <div className="min-h-screen font-sans text-[#0b1220] bg-slate-50">
             <div className="pt-24 pb-24">
-                <article className="container mx-auto px-6 w-full max-w-4xl">
+                <article className="container mx-auto px-6 w-full max-w-4xl relative">
                     <div className="mb-8">
-                        <Link to="/media-events" className="text-blue-600 text-sm font-semibold hover:underline mb-4 inline-block">← Back to Media</Link>
+                        <button
+                            onClick={handleBack}
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 font-medium text-sm shadow-sm hover:bg-slate-50 hover:text-slate-900 hover:border-slate-300 transition-all duration-200 hover:-translate-y-0.5 mb-6 cursor-pointer"
+                        >
+                            <ArrowLeft size={16} /> Back
+                        </button>
                         <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
                             {article.title}
                         </h1>

@@ -3,6 +3,7 @@ import { Leaf, ArrowRight, Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../images/logo-bg.webp";
+    
 
 export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollToId }) {
     const location = useLocation();
@@ -12,8 +13,8 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
     const navLinks = useMemo(
         () => [
             { id: "home", label: "Home" },
-            { id: "philosophy", label: "Philosophy" },
-            { id: "what-we-do", label: "What We Do" },
+            { id: "about-us", label: "About Us" },
+            { id: "philosophy", label: "Philosophy"},
 
             { id: "solutions", label: "Solutions" },
             { id: "academy", label: "Academy" },
@@ -106,9 +107,9 @@ export default function Navbar({ isScrolled, mobileOpen, setMobileOpen, scrollTo
                 <div className="flex gap-3 items-center">
                     <button
                         className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-[13px] font-semibold bg-slate-900 text-white transition-all hover:bg-slate-800 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
-                        onClick={() => handleNavClick({ id: "regintel" })}
+                        onClick={() => handleNavClick({ id: "contact" })}
                     >
-                        Explore <ArrowRight size={14} />
+                        Reach Us <ArrowRight size={14} />
                     </button>
 
                     <button

@@ -4,23 +4,23 @@ import AcademyCard from "../ui/AcademyCard";
 
 export default function Academy({ onContactClick }) {
     return (
-        <section id="academy" className="py-16 border-t border-slate-900/5 bg-[radial-gradient(1000px_600px_at_10%_0%,rgba(230,81,0,0.14),transparent_60%),radial-gradient(900px_600px_at_90%_30%,rgba(46,125,50,0.12),transparent_60%),linear-gradient(180deg,rgba(255,245,238,0.60),rgba(255,255,255,0.92))]">
+        <section id="academy" className="py-16 border-t border-slate-900/5 bg-[radial-gradient(1000px_600px_at_10%_0%,rgba(234,179,8,0.14),transparent_60%),radial-gradient(900px_600px_at_90%_30%,rgba(46,125,50,0.12),transparent_60%),linear-gradient(180deg,rgba(255,255,255,0.60),rgba(255,255,255,0.92))]">
             <div className="container mx-auto px-6 w-full max-w-7xl">
                 <div className="flex flex-col items-center text-center gap-8 mb-10">
                     <div className="max-w-[78ch] mx-auto">
-                        <div className="inline-flex items-center gap-2.5 px-3 py-2 rounded-full border border-[#E65100]/25 bg-white/60 text-[#E65100]/96 font-extrabold text-[13px]">
+                        <div className="inline-flex items-center gap-2.5 px-3 py-2 rounded-full border border-yellow-500/25 bg-white/60 text-yellow-700 font-extrabold text-[13px]">
                             <Sparkles size={16} />
                             <span>GreenAI Academy</span>
                         </div>
-                        <h2 className="text-[clamp(24px,3vw,36px)] leading-tight font-bold my-4 tracking-[-0.4px]">Industry-Certified Programs</h2>
-                        <p className="text-[#5d6b6a] text-lg">
+                        <h2 className="text-[clamp(24px,3vw,36px)] leading-tight font-bold my-4 tracking-[-0.4px] text-slate-800">Industry-Certified Programs</h2>
+                        <p className="text-slate-600 text-lg">
                             Hybrid, application-focused upskilling—built with industry relevance and academic credibility
                             through partnership with <strong>Jadavpur University</strong>.
                         </p>
                     </div>
 
                     <button
-                        className="inline-flex items-center gap-2.5 px-3.5 py-2.5 rounded-[14px] font-extrabold transition-all duration-150 shadow-lg cursor-pointer hover:-translate-y-0.5 hover:shadow-xl bg-gradient-to-br from-[#E65100]/98 to-[#b43800]/98 border border-[#E65100]/35 text-white shadow-[#E65100]/22"
+                        className="inline-flex items-center gap-2.5 px-3.5 py-2.5 rounded-[14px] font-extrabold transition-all duration-150 shadow-lg cursor-pointer hover:-translate-y-0.5 hover:shadow-xl bg-gradient-to-br from-[#2E7D32] to-[#1B5E20] border border-[#2E7D32]/35 text-white shadow-[#2E7D32]/22"
                         onClick={onContactClick}
                     >
                         Request a Cohort Proposal <ArrowRight size={16} />
@@ -50,9 +50,9 @@ export default function Academy({ onContactClick }) {
                     />
                 </div>
 
-                <div className="mt-3.5 flex gap-2.5 items-start p-3 py-3.5 rounded-[24px] border border-[#E65100]/18 bg-white/65">
-                    <CheckCircle2 size={18} className="shrink-0 scroll-mt-2" />
-                    <div className="text-[#5d6b6a]">
+                <div className="mt-3.5 flex gap-2.5 items-start p-3 py-3.5 rounded-[24px] border border-[#2E7D32]/18 bg-white/65">
+                    <CheckCircle2 size={18} className="shrink-0 scroll-mt-2 text-[#2E7D32]" />
+                    <div className="text-slate-600">
                         Program design supports project-based learning, capstones, and cohort delivery for enterprises and institutions.
                     </div>
                 </div>

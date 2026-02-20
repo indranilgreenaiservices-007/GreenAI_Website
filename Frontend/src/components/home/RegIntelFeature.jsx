@@ -52,35 +52,23 @@ export default function RegIntelFeature() {
                 <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(46,125,50,0.05),transparent_40%)]" aria-hidden="true"></div>
 
                 <div className="container mx-auto px-6 w-full max-w-7xl  relative z-10">
-                    <div className="flex flex-col items-center text-center gap-12 mb-10">
-                        <div className="max-w-2xl mb-5">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 bg-white text-slate-700 font-semibold text-xs tracking-wide uppercase mb-4 shadow-sm">
-                                <ShieldCheck size={14} />
-                                <span>RegIntel 360</span>
-                            </div>
-                            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">
-                                Demonstrate Compliance Intelligence
-                            </h2>
-                            <p className="text-lg text-slate-600 leading-relaxed">
-                                An end-to-end ESG compliance operating system for SEBI’s BRSR / BRSR Core:
-                                workflow digitization, ERP + IoT integration, AI-assisted guidance, and audit-ready evidence trails.
-                            </p>
-                        </div>
-                        <div className="flex flex-wrap justify-center gap-4 ml-auto">
+                    
+                        
+                        <div className="flex justify-center gap-4 -mr-206 scale-85 -mt-19 ">
                             <div className="px-6 py-4 rounded-2xl bg-white border border-slate-200 shadow-sm text-center min-w-[120px]">
-                                <div className="text-3xl font-bold text-slate-900">70%</div>
-                                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Faster Reporting</div>
+                                <div className="text-xl font-bold text-slate-900">70%</div>
+                                <div className="text-[10px] font-semibold text-slate-800 uppercase tracking-wide mt-1">Faster Reporting</div>
                             </div>
                             <div className="px-6 py-4 rounded-2xl bg-white border border-slate-200 shadow-sm text-center min-w-[120px]">
-                                <div className="text-3xl font-bold text-slate-900">100%</div>
-                                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Audit Ready</div>
+                                <div className="text-xl font-bold text-slate-900">100%</div>
+                                <div className="text-[10px] font-semibold text-slate-800 uppercase tracking-wide mt-1">Audit Ready</div>
                             </div>
                             <div className="px-6 py-4 rounded-2xl bg-white border border-slate-200 shadow-sm text-center min-w-[120px]">
-                                <div className="text-3xl font-bold text-slate-900">360°</div>
-                                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide mt-1">Visibility</div>
+                                <div className="text-xl font-bold text-slate-900">360°</div>
+                                <div className="text-[10px] font-semibold text-slate-800 uppercase tracking-wide mt-1">Visibility</div>
                             </div>
                         </div>
-                    </div>
+                    
 
                     <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-start">
                         <div className="space-y-2 ">
@@ -150,7 +138,7 @@ export default function RegIntelFeature() {
                     {/* Dashboard Card Area */}
                     <div className="relative mb-6" ref={contentRef}>
                         {/* Floating Stats Widgets (Top Right) */}
-                        <div className="absolute  -top-15 -right-1 z-20 flex flex-col-3 gap-2">
+                        <div className="absolute  -top-15    z-20 flex flex-col-3 gap-2">
                             <div className="bg-slate-900 text-white px-3 py-2 rounded-xl shadow-lg border border-slate-700/50 backdrop-blur-md">
                                 <div className="text-lg font-bold leading-none">70%</div>
                                 <div className="text-[9px] font-medium opacity-80 uppercase">Faster</div>
@@ -181,18 +169,18 @@ export default function RegIntelFeature() {
                     </div>
 
                     {/* Tabs Row (Bottom) */}
-                    <div className="flex gap-2  pb-2 scrollbar-hide ">
+                    <div className="flex gap-3  pb-2 scrollbar-hide ">
                         {tabs.map((t) => (
                             <button
                                 key={t.key}
                                 onClick={() => handleMobileTabClick(t.key)}
-                                className={`flex-none snap-start px-4 py-3 rounded-xl border flex items-center gap-2.5 transition-all w-[30%] sm:w-auto ${active === t.key
+                                className={`flex-none snap-start px-2 py-3 rounded-xl border flex items-center gap-2.5 transition-all w-[30%] sm:w-auto ${active === t.key
                                     ? "bg-slate-900 border-slate-900 text-white shadow-md"
                                     : "bg-white border-slate-200 text-slate-600"
                                     }`}
                             >
                                 <div className={`${active === t.key ? "text-green-400" : "text-slate-400"}`}>
-                                    {React.cloneElement(t.icon, { size: 18 })}
+                                    {React.cloneElement(t.icon, { size: 14 })}
                                 </div>
                                 <div className="text-left">
                                     <div className="text-[10px] font-bold leading-tight">{t.title}</div>
