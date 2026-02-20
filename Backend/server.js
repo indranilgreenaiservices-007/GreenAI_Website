@@ -15,15 +15,28 @@ const hrRoutes = require('./routes/hrRoutes');
 // Import Middleware
 const { protect } = require('./middleware/authMiddleware');
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:3000",
+  "https://green-ai-website-3ip5.vercel.app",
+];
+
 // Connect to Database
 connectDB();
 
 const app = express();
 
 // Middleware
-app.use(cors({
-    origin: '*'
-}));
+app.use(
+  cors({
+    origin: allowedOrigins,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  })
+);
+
+app.options("*", cors());
 app.use(express.json());
 
 // Routes
