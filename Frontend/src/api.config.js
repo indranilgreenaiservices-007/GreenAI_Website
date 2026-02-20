@@ -3,8 +3,14 @@
 const hostname = window.location.hostname;
 
 // If we are in development (on port 5173), we point to port 5000
-const API_BASE_URL = window.location.port === '5173' || hostname === 'localhost' || hostname.startsWith('127.0.0.1') || hostname.startsWith('192.168.')
-    ? `http://${hostname}:5000`
-    : ""; // Put your production link here like "https://api.greenai.com"
+
+
+const API_BASE_URL =
+  port === "5173" ||
+  hostname === "localhost" ||
+  hostname.startsWith("127.") ||
+  hostname.startsWith("192.168.")
+    ? "http://localhost:5000" // Local backend
+    : "https://greenai-website-webservice.onrender.com"; // Render backend
 
 export default API_BASE_URL;
