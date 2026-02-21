@@ -170,8 +170,10 @@ export default function App() {
       {/* Public Routes - Wrapped in Layout */}
       <Route element={<PublicLayoutWrapper />}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/media-events" element={<AllBlogs />} />
+        <Route path="/media-events" element={<AllBlogs type="media-events" />} />
         <Route path="/media-events/:id" element={<BlogPost />} />
+        <Route path="/insights" element={<AllBlogs type="insights" />} />
+        <Route path="/insights/:id" element={<BlogPost />} />
         <Route path="/login" element={<Login />} />
 
         {/* GAIPortal & AdminPanel inside Public Layout for now (or move out if needed) */}
