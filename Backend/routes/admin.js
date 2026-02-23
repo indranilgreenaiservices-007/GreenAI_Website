@@ -3,7 +3,6 @@ const router = express.Router();
 const User = require('../models/User');
 const { protect, admin } = require('../middleware/authMiddleware');
 const sendEmail = require('../utils/sendEmail');
-const API_BASE_URL = require('../config/api.config');
 
 // @desc    Get all users
 // @route   GET /api/admin/users
@@ -36,8 +35,7 @@ router.post('/create-user', protect, admin, async (req, res) => {
 
     if (user) {
         // Determine the frontend URL based on the request origin or environment variable
-        // const frontendUrl = process.env.FRONTEND_URL || req.headers.origin || 'http://localhost:5173';
-
+        const frontendUrl = process.env.FRONTEND_URL || req.headers.origin || 'http://localhost:5173';
 
         // Send email with credentials
         try {
@@ -52,7 +50,7 @@ router.post('/create-user', protect, admin, async (req, res) => {
                         <p style="margin: 5px 0;"><strong>Temporary Password:</strong> <code style="background-color: #eee; padding: 2px 6px; border-radius: 4px;">${password}</code></p>
                     </div>
                     <p>Please log in immediately and change your password:</p>
-                    <a href="${API_BASE_URL}/login" style="display: inline-block; background-color: #2e7d32; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Login to Portal</a>
+                    <a href="${frontendUrl}/login" style="display: inline-block; background-color: #2e7d32; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Login to Portal</a>
                     <p style="margin-top: 20px; font-size: 12px; color: #6b7280;">If you did not request this account, please contact the administrator.</p>
                 </div>
             `;
@@ -114,13 +112,17 @@ router.put('/users/:id', protect, admin, async (req, res) => {
 // @route   DELETE /api/admin/users/:id
 // @access  Private/Admin
 router.delete('/users/:id', protect, admin, async (req, res) => {
-    const user = await User.findById(req.params.id);
+    try {
+        const user = await User.findByIdAndDelete(req.params.id);
 
-    if (user) {
-        await user.deleteOne();
-        res.json({ message: 'User removed' });
-    } else {
-        res.status(404).json({ message: 'User not found' });
+        if (user) {
+            res.json({ message: 'User removed successfully' });
+        } else {
+            res.status(404).json({ message: 'User not found' });
+        }
+    } catch (error) {
+        console.error('Error deleting user:', error);
+        res.status(500).json({ message: 'Failed to delete user', error: error.message });
     }
 });
 
