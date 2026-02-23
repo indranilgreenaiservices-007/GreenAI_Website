@@ -54,9 +54,15 @@ const AdminPanel = () => {
                 body: JSON.stringify(formData)
             });
 
+            const data = await response.json();
+
             if (!response.ok) {
-                const data = await response.json();
                 throw new Error(data.message || 'Failed to create user');
+            }
+
+            // Alert administrator if user was created but email failed
+            if (data.message && data.message.includes('email failed to send')) {
+                alert(data.message);
             }
 
             setShowModal(false);

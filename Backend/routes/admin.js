@@ -34,6 +34,9 @@ router.post('/create-user', protect, admin, async (req, res) => {
     });
 
     if (user) {
+        // Determine the frontend URL based on the request origin or environment variable
+        const frontendUrl = process.env.FRONTEND_URL || req.headers.origin || 'http://localhost:5173';
+
         // Send email with credentials
         try {
             const message = `
@@ -47,7 +50,7 @@ router.post('/create-user', protect, admin, async (req, res) => {
                         <p style="margin: 5px 0;"><strong>Temporary Password:</strong> <code style="background-color: #eee; padding: 2px 6px; border-radius: 4px;">${password}</code></p>
                     </div>
                     <p>Please log in immediately and change your password:</p>
-                    <a href="http://localhost:5173/login" style="display: inline-block; background-color: #2e7d32; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Login to Portal</a>
+                    <a href="${frontendUrl}/login" style="display: inline-block; background-color: #2e7d32; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Login to Portal</a>
                     <p style="margin-top: 20px; font-size: 12px; color: #6b7280;">If you did not request this account, please contact the administrator.</p>
                 </div>
             `;
