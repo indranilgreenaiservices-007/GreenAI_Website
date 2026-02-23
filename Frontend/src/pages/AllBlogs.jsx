@@ -1,14 +1,18 @@
 import React, { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
-import { articles } from '../components/home/Media';
+import { articles as mediaArticles } from '../components/home/Media';
+import { insightsData } from '../components/home/Insights';
 import ActiveBackground from '../components/layout/ActiveBackground';
 import Footer from '../components/layout/Footer';
 
-export default function AllBlogs() {
+export default function AllBlogs({ type = "media-events" }) {
     const navigate = useNavigate();
-    // Convert object to array
-    const allArticles = Object.values(articles);
+
+    const isInsights = type === "insights";
+    const sourceData = isInsights ? insightsData : mediaArticles;
+    const allArticles = Object.values(sourceData);
+
     const itemsPerPage = 8;
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -21,7 +25,7 @@ export default function AllBlogs() {
 
     React.useEffect(() => {
         window.scrollTo(0, 0);
-    }, [currentPage]);
+    }, [currentPage, type]);
 
     const handleBack = () => {
         if (currentPage > 1) {
@@ -43,7 +47,7 @@ export default function AllBlogs() {
                     <div className="mb-8">
                         <Link
                             to="/"
-                            state={{ scrollTo: "media" }}
+                            state={{ scrollTo: isInsights ? "insights" : "media" }}
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 font-medium text-sm shadow-sm hover:bg-slate-50 hover:text-slate-900 hover:border-slate-300 transition-all duration-200 hover:-translate-y-0.5"
                         >
                             <ArrowLeft size={16} /> Back
@@ -51,9 +55,13 @@ export default function AllBlogs() {
                     </div>
 
                     <div className="mb-16 text-center max-w-3xl mx-auto">
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">All Media & News</h1>
+                        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
+                            {isInsights ? "All Insights & Research" : "All Media & News"}
+                        </h1>
                         <p className="text-lg text-slate-600">
-                            Explore our complete archive of articles, updates, and thought leadership on sustainable AI.
+                            {isInsights
+                                ? "Explore our complete archive of technical deep-dives, podcasts, and research updates on sustainable AI."
+                                : "Explore our complete archive of press releases, media coverage, and company updates on sustainable AI."}
                         </p>
                     </div>
 
@@ -62,14 +70,23 @@ export default function AllBlogs() {
                             <div
                                 key={article.id}
                                 className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group flex flex-col h-full cursor-pointer"
-                                onClick={() => navigate(`/media-events/${article.id}`, { state: { from: 'media-events', page: currentPage } })}
+                                onClick={() => navigate(`/${type}/${article.id}`, { state: { from: type, page: currentPage } })}
                             >
                                 <div className="h-56 overflow-hidden relative bg-slate-50 border-b border-slate-100">
-                                    <img
-                                        src={article.image}
-                                        alt={article.title}
-                                        className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
-                                    />
+                                    <div className={`grid h-full ${article.secondaryImage ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                                        <img
+                                            src={article.image}
+                                            alt={article.title}
+                                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                        />
+                                        {article.secondaryImage && (
+                                            <img
+                                                src={article.secondaryImage}
+                                                alt={article.title + " 2"}
+                                                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105 border-l border-white/20"
+                                            />
+                                        )}
+                                    </div>
                                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm flex items-center gap-1.5">
                                         <Calendar size={12} className="text-blue-600" />
                                         {article.date}
@@ -86,7 +103,7 @@ export default function AllBlogs() {
                                         {article.excerpt}
                                     </p>
                                     <div className="flex items-center text-blue-600 font-bold text-sm group-hover:translate-x-1 transition-transform">
-                                        Read News <ArrowRight size={16} className="ml-2" />
+                                        Read More <ArrowRight size={16} className="ml-2" />
                                     </div>
                                 </div>
                             </div>

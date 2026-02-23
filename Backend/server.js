@@ -1,6 +1,9 @@
+const path = require('path');
+const dotenv = require('dotenv');
+// Load environment variables immediately
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 const express = require('express');
-const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const cors = require('cors');
 
@@ -12,8 +15,13 @@ const hrRoutes = require('./routes/hrRoutes');
 // Import Middleware
 const { protect } = require('./middleware/authMiddleware');
 
-// Load environment variables
-dotenv.config();
+const allowedOrigins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://green-ai-website-3ip5.vercel.app",
+    "https://green-ai-website.vercel.app",
+    "https://greenai-website-vercel.app"
+];
 
 // Connect to Database
 connectDB();
@@ -21,17 +29,23 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors({
-    origin: '*'
-}));
+app.use(
+    cors({
+        origin: allowedOrigins,
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type", "Authorization"],
+        credentials: true,
+    })
+);
+
 app.use(express.json());
 
 // Routes
 // Authentication (Login/Register)
 app.use('/api/auth', authRoutes);
 
-// Admin Routes (Protected)
-app.use('/api/admin', protect, adminRoutes);
+// Admin Routes (Protected by route defined middleware)
+app.use('/api/admin', adminRoutes);
 
 // HR Routes (Protected internally, but good to be explicit or leave it to router)
 // hrRoutes uses `router.use(protect)` internally so it's safe.
@@ -39,4 +53,4 @@ app.use('/api/hr', hrRoutes);
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, '0.0.0.0',() => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));

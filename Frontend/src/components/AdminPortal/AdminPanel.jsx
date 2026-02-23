@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Users, UserPlus, Trash2, Edit2, Shield, ArrowLeft, X, Save } from 'lucide-react';
+import API_BASE_URL from '../../api.config';
 
 const AdminPanel = () => {
     const navigate = useNavigate();
@@ -26,7 +27,7 @@ const AdminPanel = () => {
 
     const fetchUsers = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/admin/users', {
+            const response = await fetch(`${API_BASE_URL}/api/admin/users`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -44,7 +45,7 @@ const AdminPanel = () => {
     const handleCreateUser = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/api/admin/create-user', {
+            const response = await fetch(`${API_BASE_URL}/api/admin/create-user`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,9 +54,15 @@ const AdminPanel = () => {
                 body: JSON.stringify(formData)
             });
 
+            const data = await response.json();
+
             if (!response.ok) {
-                const data = await response.json();
                 throw new Error(data.message || 'Failed to create user');
+            }
+
+            // Alert administrator if user was created but email failed
+            if (data.message && data.message.includes('email failed to send')) {
+                alert(data.message);
             }
 
             setShowModal(false);
@@ -70,7 +77,7 @@ const AdminPanel = () => {
         if (!window.confirm('Are you sure you want to delete this user?')) return;
 
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/users/${id}`, {
+            const response = await fetch(`${API_BASE_URL}/api/admin/users/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`

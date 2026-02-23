@@ -1,7 +1,8 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { useParams, Link, useLocation, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, User, Clock } from 'lucide-react';
-import { articles } from '../components/home/Media'; // Import data from Blogs component
+import { ArrowLeft, Calendar, User, Clock, ChevronLeft, ChevronRight } from 'lucide-react';
+import { articles as mediaArticles } from '../components/home/Media';
+import { insightsData } from '../components/home/Insights';
 import ActiveBackground from '../components/layout/ActiveBackground';
 import Footer from '../components/layout/Footer';
 import Navbar from '../components/layout/Navbar';
@@ -12,24 +13,59 @@ function highlightBoldText(text) {
 
 export default function BlogPost() {
     const { id } = useParams();
-    const articleId = Number(id);
-    const article = articles[articleId];
+    const articleId = isNaN(Number(id)) ? id : Number(id);
+    const allArticles = { ...mediaArticles, ...insightsData };
+    const article = allArticles[articleId];
     const location = useLocation();
     const navigate = useNavigate();
 
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const images = useMemo(() => {
+        const imgs = [];
+        if (article?.image) imgs.push(article.image);
+        if (article?.secondaryImage) imgs.push(article.secondaryImage);
+        return imgs;
+    }, [article]);
+
+    useEffect(() => {
+        if (!images || images.length <= 1) return;
+
+        const timer = setInterval(() => {
+            setCurrentImageIndex((prev) => (prev + 1) % images.length);
+        }, 4000);
+
+        return () => clearInterval(timer);
+    }, [images]);
+
+    const nextImage = () => {
+        setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    };
+
     // Helper inside component to scroll top on mount
-    React.useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0);
     }, [id]);
 
     const handleBack = (e) => {
         e.preventDefault();
-        // Check if user came from 'media-events' (pagination) or elsewhere
-        if (location.state?.from === 'media-events') {
-            navigate(-1); // Go back to history (preserves page numbers)
+        if (location.state?.from) {
+            if (location.state.from === 'media-events' || location.state.from === 'insights') {
+                if (location.state.page) {
+                    navigate(-1);
+                } else {
+                    navigate('/', { state: { scrollTo: location.state.from === 'insights' ? 'insights' : 'media' } });
+                }
+            } else {
+                navigate(-1);
+            }
         } else {
-            // Direct access or from home, go to Home Media Section
-            navigate('/', { state: { scrollTo: "media" } });
+            const section = location.pathname.startsWith('/insights') ? 'insights' : 'media';
+            navigate('/', { state: { scrollTo: section } });
         }
     };
 
@@ -72,13 +108,47 @@ export default function BlogPost() {
                         </div>
                     </div>
 
-                    <div className="relative w-full rounded-2xl overflow-hidden shadow-lg mb-10 bg-slate-50 border border-slate-100 flex justify-center">
-                        <img
-                            src={article.image}
-                            alt={article.title}
-                            className="w-auto h-auto max-h-[80vh] object-contain"
-                        />
-                    </div>
+                    {images.length > 0 && (
+                        <div className="relative w-full rounded-2xl overflow-hidden shadow-lg mb-10 bg-slate-50 border border-slate-100 flex justify-center group">
+                            <img
+                                src={images[currentImageIndex]}
+                                alt={`${article.title} - Image ${currentImageIndex + 1}`}
+                                className="w-auto h-auto max-h-[60vh] md:max-h-[80vh] object-contain transition-opacity duration-500"
+                            />
+
+                            {images.length > 1 && (
+                                <>
+                                    <button
+                                        onClick={prevImage}
+                                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-slate-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity"
+                                        aria-label="Previous image"
+                                    >
+                                        <ChevronLeft size={24} />
+                                    </button>
+                                    <button
+                                        onClick={nextImage}
+                                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-slate-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity"
+                                        aria-label="Next image"
+                                    >
+                                        <ChevronRight size={24} />
+                                    </button>
+
+                                    {/* Indicators */}
+                                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                                        {images.map((_, idx) => (
+                                            <button
+                                                key={idx}
+                                                onClick={() => setCurrentImageIndex(idx)}
+                                                className={`w-2.5 h-2.5 rounded-full transition-all ${idx === currentImageIndex ? "bg-white scale-125" : "bg-white/50 hover:bg-white/80"
+                                                    }`}
+                                                aria-label={`Go to image ${idx + 1}`}
+                                            />
+                                        ))}
+                                    </div>
+                                </>
+                            )}
+                        </div>
+                    )}
 
                     <div className="prose prose-lg prose-slate max-w-none">
                         {article.content.map((paragraph, index) => (

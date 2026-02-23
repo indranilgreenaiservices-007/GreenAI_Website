@@ -4,7 +4,7 @@ const User = require('./models/User');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 
-dotenv.config();
+dotenv.config({ path: require('path').resolve(__dirname, '.env') });
 
 const debugUsers = async () => {
     try {

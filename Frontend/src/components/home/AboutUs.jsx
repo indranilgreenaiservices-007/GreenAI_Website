@@ -87,7 +87,7 @@ export default function AboutUs() {
                         MEET GREEN<span className="text-green-500">A</span>I BOARD
                     </h2>
                     <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-12">
-                        Innovators Behind Sustainable AI Solutions
+                        Innovators Behind Sovereign AI Solutions
                     </p>
 
                     {/* Board Image Banner with Descriptions */}
