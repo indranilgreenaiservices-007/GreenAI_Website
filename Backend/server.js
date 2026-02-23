@@ -19,6 +19,8 @@ const allowedOrigins = [
     "http://localhost:5173",
     "http://localhost:3000",
     "https://green-ai-website-3ip5.vercel.app",
+    "https://green-ai-website.vercel.app",
+    "https://greenai-website-vercel.app"
 ];
 
 // Connect to Database
