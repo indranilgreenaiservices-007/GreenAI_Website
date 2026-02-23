@@ -4,8 +4,8 @@ const sendEmail = async (options) => {
     const transporter = nodemailer.createTransport({
         service: process.env.SMTP_SERVICE || 'gmail', // fallback to gmail if not set
         auth: {
-            user: process.env.SMTP_EMAIL,
-            pass: process.env.SMTP_PASSWORD,
+            user: process.env.SMTP_EMAIL || process.env.HR_EMAIL,
+            pass: process.env.SMTP_PASSWORD || process.env.HR_EMAIL_PASSWORD,
         },
     });
 

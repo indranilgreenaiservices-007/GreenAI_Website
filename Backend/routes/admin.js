@@ -16,70 +16,74 @@ router.get('/users', protect, admin, async (req, res) => {
 // @route   POST /api/admin/create-user
 // @access  Private/Admin
 router.post('/create-user', protect, admin, async (req, res) => {
-    const { name, email, password, role } = req.body;
+    try {
+        const { name, email, password, role } = req.body;
 
-    const userExists = await User.findOne({ email });
+        const userExists = await User.findOne({ email });
 
-    if (userExists) {
-        res.status(400).json({ message: 'User already exists' });
-        return;
-    }
-
-    const user = await User.create({
-        name,
-        email,
-        password, // Hash middleware handles this
-        role,
-        needsPasswordChange: true, // Force password change for new users
-    });
-
-    if (user) {
-        // Determine the frontend URL based on the request origin or environment variable
-        const frontendUrl = process.env.FRONTEND_URL || req.headers.origin || 'http://localhost:5173';
-
-        // Send email with credentials
-        try {
-            const message = `
-                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-                    <h2 style="color: #2e7d32;">Welcome to GreenAI Internal Portal</h2>
-                    <p>Hello <strong>${user.name}</strong>,</p>
-                    <p>An account has been created for you with the following details:</p>
-                    <div style="background-color: #f9fafb; padding: 15px; border-radius: 8px; border: 1px solid #e5e7eb;">
-                        <p style="margin: 5px 0;"><strong>Email:</strong> ${user.email}</p>
-                        <p style="margin: 5px 0;"><strong>Role:</strong> ${user.role}</p>
-                        <p style="margin: 5px 0;"><strong>Temporary Password:</strong> <code style="background-color: #eee; padding: 2px 6px; border-radius: 4px;">${password}</code></p>
-                    </div>
-                    <p>Please log in immediately and change your password:</p>
-                    <a href="${frontendUrl}/login" style="display: inline-block; background-color: #2e7d32; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Login to Portal</a>
-                    <p style="margin-top: 20px; font-size: 12px; color: #6b7280;">If you did not request this account, please contact the administrator.</p>
-                </div>
-            `;
-
-            await sendEmail({
-                email: user.email,
-                subject: 'GreenAI Portal Access - Your Credentials',
-                message,
-            });
-
-            res.status(201).json({
-                _id: user._id,
-                name: user.name,
-                email: user.email,
-                role: user.role,
-                message: 'User created and email sent successfully',
-            });
-        } catch (emailError) {
-            console.error('Email send failed:', emailError);
-            res.status(201).json({
-                _id: user._id,
-                name: user.name,
-                email: user.email,
-                role: user.role,
-                message: 'User created, but email failed to send. Please share credentials manually.',
-            });
+        if (userExists) {
+            return res.status(400).json({ message: 'User already exists' });
         }
-    } else {
-        res.status(400).json({ message: 'Invalid user data' });
+
+        const user = await User.create({
+            name,
+            email,
+            password, // Hash middleware handles this
+            role,
+            needsPasswordChange: true, // Force password change for new users
+        });
+
+        if (user) {
+            // Determine the frontend URL based on the request origin or environment variable
+            const frontendUrl = process.env.FRONTEND_URL || req.headers.origin || 'http://localhost:5173';
+
+            // Send email with credentials
+            try {
+                const message = `
+                    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+                        <h2 style="color: #2e7d32;">Welcome to GreenAI Internal Portal</h2>
+                        <p>Hello <strong>${user.name}</strong>,</p>
+                        <p>An account has been created for you with the following details:</p>
+                        <div style="background-color: #f9fafb; padding: 15px; border-radius: 8px; border: 1px solid #e5e7eb;">
+                            <p style="margin: 5px 0;"><strong>Email:</strong> ${user.email}</p>
+                            <p style="margin: 5px 0;"><strong>Role:</strong> ${user.role}</p>
+                            <p style="margin: 5px 0;"><strong>Temporary Password:</strong> <code style="background-color: #eee; padding: 2px 6px; border-radius: 4px;">${password}</code></p>
+                        </div>
+                        <p>Please log in immediately and change your password:</p>
+                        <a href="${frontendUrl}/login" style="display: inline-block; background-color: #2e7d32; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Login to Portal</a>
+                        <p style="margin-top: 20px; font-size: 12px; color: #6b7280;">If you did not request this account, please contact the administrator.</p>
+                    </div>
+                `;
+
+                await sendEmail({
+                    email: user.email,
+                    subject: 'GreenAI Portal Access - Your Credentials',
+                    message,
+                });
+
+                res.status(201).json({
+                    _id: user._id,
+                    name: user.name,
+                    email: user.email,
+                    role: user.role,
+                    message: 'User created and email sent successfully',
+                });
+            } catch (emailError) {
+                console.error('Email send failed:', emailError);
+                res.status(201).json({
+                    _id: user._id,
+                    name: user.name,
+                    email: user.email,
+                    role: user.role,
+                    message: 'User created, but email failed to send. Please share credentials manually.',
+                });
+            }
+        } else {
+            res.status(400).json({ message: 'Invalid user data' });
+        }
+    } catch (error) {
+        console.error('Error creating user:', error);
+        res.status(500).json({ message: 'Server error during user creation', error: error.message });
     }
 });
 
