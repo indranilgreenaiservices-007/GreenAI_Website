@@ -1,7 +1,7 @@
 // Dynamically determine the API Base URL
 
 const hostname = window.location.hostname;
-const port = window.location.port; 
+const port = window.location.port;
 
 const API_BASE_URL =
   port === "5173" ||

@@ -5,19 +5,18 @@ const connectDB = require('./config/db');
 
 dotenv.config();
 
-// Ensure DB connects before seeing if user exists
+
 const seedAdmin = async () => {
     try {
-        await connectDB(); // Wait for connection
-
+        await connectDB(); 
         const adminExists = await User.findOne({ role: 'admin' });
         if (!adminExists) {
             await User.create({
                 name: 'IndranilGreenAI',
                 email: 'indranil.greenaiservices@gmail.com',
-                password: 'ChangeMe123!', // Initial Admin Password
+                password: 'ChangeMe123!', 
                 role: 'admin',
-                needsPasswordChange: true, // Also force admin to change default password
+                needsPasswordChange: true, 
             });
             console.log('Admin user created');
         } else {
@@ -26,7 +25,7 @@ const seedAdmin = async () => {
     } catch (error) {
         console.error(error);
     } finally {
-        // Disconnect to exit process cleanly
+        
         mongoose.disconnect();
         process.exit();
     }
