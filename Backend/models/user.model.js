@@ -15,11 +15,11 @@ const userSchema = new mongoose.Schema({
     },
     phone: {
         type: String,
-        default: null, // Null for old users
+        default: null, // Default value
     },
     organizationName: {
         type: String,
-        default: null, // Null for old users
+        default: null, // Default value
     },
     designation: {
         type: String,

@@ -42,16 +42,15 @@ app.use(
 
 app.use(express.json());
 
-// Routes
+
 // Authentication (Login/Register)
 app.use('/api/auth', authRoutes);
 app.use('/api/platform-auth', platformAuthRoutes);
 
-// Admin Routes (Protected by route defined middleware)
+// Admin Routes 
 app.use('/api/admin', adminRoutes);
 
-// HR Routes (Protected internally, but good to be explicit or leave it to router)
-// hrRoutes uses `router.use(protect)` internally so it's safe.
+// HR Routes 
 app.use('/api/hr', hrRoutes);
 
 const PORT = process.env.PORT || 5000;

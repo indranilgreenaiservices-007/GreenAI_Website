@@ -212,8 +212,7 @@ export default function PlatformLogin() {
                         </button>
 
                         <FacebookLogin
-                            // Replace with your actual Facebook App ID
-                            appId={import.meta.env.VITE_FACEBOOK_APP_ID || "1234567890"}
+                            appId={import.meta.env.VITE_FACEBOOK_APP_ID}
                             autoLoad={false}
                             fields="name,email,picture"
                             callback={handleFacebookResponse}
