@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const fs = require('fs');
 const path = require('path');
-const User = require('./models/user.model'); 
+const User = require('./models/user.model');
 require('dotenv').config();
 
 const migrate = async () => {
@@ -11,7 +11,7 @@ const migrate = async () => {
         console.log("✅ Connected to DB.");
 
         // --- STEP 1: FORCE DROP INDEXES ---
-        console.log("Cleaning up old indexes...");
+        console.log("Cleaning up existing indexes...");
         try {
             const collection = mongoose.connection.db.collection('users');
             await collection.dropIndex("googleId_1");
@@ -67,17 +67,17 @@ const migrate = async () => {
             // Use findOneAndUpdate with $set. 
             // This replaces data but won't touch fields we didn't define.
             await User.findOneAndUpdate(
-                { email: mappedUser.email }, 
-                { $set: mappedUser }, 
-                { 
-                    upsert: true, 
-                    returnDocument: 'after', 
-                    runValidators: false 
+                { email: mappedUser.email },
+                { $set: mappedUser },
+                {
+                    upsert: true,
+                    returnDocument: 'after',
+                    runValidators: false
                 }
             );
             count++;
         }
-        
+
         console.log(`\n✨ Success! ${count} users migrated without index errors.`);
         process.exit(0);
     } catch (err) {
