@@ -78,7 +78,7 @@ export default function Insights() {
                 <div className="mb-12 text-center max-w-3xl mx-auto">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-100 bg-blue-50 text-blue-700 font-semibold text-xs tracking-wide uppercase mb-4 shadow-sm">
                         <Layers size={12} />
-                        Technical & Research
+                        Insights
                     </div>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">GreenAI Insights</h2>
                     <p className="text-lg text-slate-600">

@@ -9,6 +9,7 @@ const cors = require('cors');
 
 // Import Route handlers
 const authRoutes = require('./routes/auth');
+const platformAuthRoutes = require('./routes/platformAuth');
 const adminRoutes = require('./routes/admin');
 const hrRoutes = require('./routes/hrRoutes');
 
@@ -17,6 +18,7 @@ const { protect } = require('./middleware/authMiddleware');
 
 const allowedOrigins = [
     "http://localhost:5173",
+    "http://localhost:5174",
     "http://localhost:3000",
     "https://green-ai-website-3ip5.vercel.app",
     "https://green-ai-website.vercel.app",
@@ -43,6 +45,7 @@ app.use(express.json());
 // Routes
 // Authentication (Login/Register)
 app.use('/api/auth', authRoutes);
+app.use('/api/platform-auth', platformAuthRoutes);
 
 // Admin Routes (Protected by route defined middleware)
 app.use('/api/admin', adminRoutes);

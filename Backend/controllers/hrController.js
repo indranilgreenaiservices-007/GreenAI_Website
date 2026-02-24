@@ -82,10 +82,15 @@ exports.sendInterviewMail = async (req, res) => {
         const { applicantId, date, time, mode, link, email, fullName, jobTitle } = req.body;
 
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
+            host: 'smtp.gmail.com',
+            port: 465,
+            secure: true,
             auth: {
-                user: process.env.HR_EMAIL, // Updated to use HR_EMAIL
+                user: process.env.HR_EMAIL,
                 pass: process.env.HR_EMAIL_PASSWORD
+            },
+            tls: {
+                rejectUnauthorized: false
             }
         });
 

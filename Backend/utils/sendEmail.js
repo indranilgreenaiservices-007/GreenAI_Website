@@ -1,12 +1,18 @@
 const nodemailer = require('nodemailer');
 
 const sendEmail = async (options) => {
+    // Explicit configuration is often more reliable on Render/Vercel
     const transporter = nodemailer.createTransport({
-        service: process.env.SMTP_SERVICE || 'gmail', // fallback to gmail if not set
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true, // use SSL
         auth: {
             user: process.env.SMTP_EMAIL || process.env.HR_EMAIL,
             pass: process.env.SMTP_PASSWORD || process.env.HR_EMAIL_PASSWORD,
         },
+        tls: {
+            rejectUnauthorized: false // Helps avoid certificate issues on some cloud hosts
+        }
     });
 
     // Provide robust fallbacks for sender details in case they aren't configured in production

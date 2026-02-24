@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Leaf, ArrowRight, Scale, LineChart, Mic, GraduationCap, CheckCircle2, Activity, Users, FileText, Ruler, Scan, Database, Cpu, Volume2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -200,7 +201,7 @@ const features = [
 
 const FloatingSyllables = () => {
     const syllables = [
-        "हि", "পা", "বা", "অস", "বো", "মণি", "ला", "ગુ", "मा", "ଓଡ଼ି", "த", "తె", "ಕ", "ಮ", "पं", "कु", "को","ꯀ", "ꯁ", "ꯃ","অ", "মি", "ষ","ভ", "লো","Ch", "Ṭ", "Sü","ᰀ", "ᰛ", "ᰣ"
+        "हि", "পা", "বা", "অস", "বো", "মণি", "ला", "ગુ", "मा", "ଓଡ଼ି", "த", "తె", "ಕ", "ಮ", "पं", "कु", "को", "ꯀ", "ꯁ", "ꯃ", "অ", "মি", "ষ", "ভ", "লো", "Ch", "Ṭ", "Sü", "ᰀ", "ᰛ", "ᰣ"
     ];
 
     return (
@@ -223,11 +224,11 @@ const FloatingSyllables = () => {
                             fontSize: `${size}px`,
                             bottom: "-22%",
                             fontFamily: "'Noto Sans', sans-serif",
-                            
+
                         }}
                         initial={{ y: 0, opacity: 10, rotate: 0, scale: 0.6 }}
                         animate={{
-                            y: "-200vh", 
+                            y: "-200vh",
                             opacity: [2, 3, 5, 3, 2],
                             rotate: [0, 20, -20, 0],
                             scale: [0.6, 0.8, 1.1, 0.8, 0]
@@ -250,6 +251,20 @@ const FloatingSyllables = () => {
 export default function Hero({ onPrimary, onSecondary }) {
     const [activeIdx, setActiveIdx] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
+    const [wordIdx, setWordIdx] = useState(0);
+    const navigate = useNavigate();
+
+    const sovereignWords = [
+        "Sovereign", "সার্বভৌম", "संप्रभु", "सार्वभौम", "ᱚᱯᱚᱱᱟᱛ", "རང་དབང་ལྡན་པ།",
+        "సర్వసత్తాక", "ਪ੍ਰਭੂਸੱਤਾ ਸੰਪੰਨ", "ਸਾਰ੍ਵਭੌਮ", "ಸಾರ್ವಭೌಮ", "ସାର୍ବଭୌମ"
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setWordIdx((prev) => (prev + 1) % sovereignWords.length);
+        }, 2200);
+        return () => clearInterval(interval);
+    }, []);
 
     // Auto-swipe functionality
     useEffect(() => {
@@ -262,7 +277,7 @@ export default function Hero({ onPrimary, onSecondary }) {
     }, [isHovered]);
 
     return (
-        <section id="home" className="relative  lg:py-25 overflow-hidden">
+        <section id="home" className="relative  lg:py-20 overflow-hidden">
             <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
                 <div className="absolute w-[600px] h-[600px] rounded-full blur-3xl opacity-30 -left-[200px] -top-[300px] bg-[radial-gradient(circle_at_center,rgba(46,125,50,0.4),rgba(255,255,255,0))]" />
                 <div className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-20 -right-[150px] -top-[200px] bg-[radial-gradient(circle_at_center,rgba(46,125,50,0.3),rgba(255,255,255,0))]" />
@@ -287,15 +302,38 @@ export default function Hero({ onPrimary, onSecondary }) {
                             repeat: Infinity,
                             ease: "easeInOut"
                         }}
-                        className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-green-200 bg-green-50 text-green-800 font-bold text-[15px] tracking-wide mb-6 shadow-sm w-fit"
+                        className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-green-200 bg-green-50 text-green-800 font-bold text-[12px] tracking-wide  shadow-sm w-fit"
                     >
 
                         <span>GREENAI's</span>
                     </motion.div>
 
 
-                    <h1 className="text-6xl text-left font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6">
-                        Sovereign AI for <span className="text-green-700">Enterprise</span> , <span className="text-slate-800">Government</span> & <span className="text-slate-800">People</span>
+                    <h1 className="text-5xl text-left font-extrabold tracking-tight text-slate-900 leading-[1.2] mb-8 mt-12">
+                        <span className="inline-flex items-baseline flex-wrap">
+                            <span className="relative inline-block h-[1.3em] min-w-[360px] overflow-visible mr-4">
+                                <AnimatePresence mode="wait">
+                                    <motion.span
+                                        key={wordIdx}
+                                        initial={{ y: "40%", opacity: 0 }}
+                                        animate={{ y: "0%", opacity: 1 }}
+                                        exit={{ y: "-40%", opacity: 0 }}
+                                        transition={{
+                                            y: { type: "spring", stiffness: 200, damping: 25 },
+                                            opacity: { duration: 1.20 }
+                                        }}
+                                        className="absolute left-0 bottom-[0.1em] text-green-700 whitespace-nowrap pb-2"
+                                        style={{ lineHeight: '1.2' }}
+                                    >
+                                        {sovereignWords[wordIdx]}
+                                    </motion.span>
+                                </AnimatePresence>
+                            </span>
+                            <span className="text-slate-900 whitespace-nowrap">AI for People,</span>
+                        </span>
+                        <div className="mt-2 text-slate-800">
+                            Government & <span className="text-green-700">Enterprise</span>
+                        </div>
                     </h1>
 
                     <p className="text-lg leading-relaxed text-slate-600 mb-8 max-w-xl">
@@ -470,11 +508,30 @@ export default function Hero({ onPrimary, onSecondary }) {
                         </motion.div>
 
 
-                        <h1 className="text-5xl font-extrabold text-slate-900 leading-[1.2] tracking-tight mb-6">
-                            Sovereign AI for{" "}
-                            <span className="text-green-700">Enterprise</span> ,{" "}
-                            <span className="text-slate-800">Government</span> &{" "}
-                            <span className="text-slate-800">People</span>
+                        <h1 className="text-4xl xs:text-5xl font-extrabold text-slate-900 leading-[1.2] tracking-tight mb-6 flex flex-col items-center">
+                            <span className="relative inline-block h-[1.3em] w-full overflow-visible">
+                                <AnimatePresence mode="wait">
+                                    <motion.span
+                                        key={wordIdx}
+                                        initial={{ y: "40%", opacity: 0 }}
+                                        animate={{ y: "0%", opacity: 1 }}
+                                        exit={{ y: "-40%", opacity: 0 }}
+                                        transition={{
+                                            y: { type: "spring", stiffness: 200, damping: 25 },
+                                            opacity: { duration: 1.20 }
+                                        }}
+                                        className="absolute inset-0 text-green-700 text-center"
+                                        style={{ lineHeight: '1.2' }}
+                                    >
+                                        {sovereignWords[wordIdx]}
+                                    </motion.span>
+                                </AnimatePresence>
+                            </span>
+                            <span className="mt-2">
+                                AI for <span className="text-slate-800">People</span>,{" "}
+                                <span className="text-slate-800">Government</span> &{" "}
+                                <span className="text-green-700">Enterprise</span>
+                            </span>
                         </h1>
 
                         <p className="text-[18px] leading-relaxed text-slate-600 max-w-sm mb-9">
@@ -513,9 +570,9 @@ export default function Hero({ onPrimary, onSecondary }) {
         bg-white/80 backdrop-blur-md border border-slate-200 
         text-slate-700 text-sm shadow-sm 
         transition-all active:scale-95 hover:bg-white"
-                                onClick={onSecondary}
+                                onClick={() => navigate("/dashboard")}
                             >
-                                Reach Us <ArrowRight size={14} />
+                                Explore <ArrowRight size={14} />
                             </button>
                         </div>
                     </motion.div>
@@ -566,9 +623,9 @@ export default function Hero({ onPrimary, onSecondary }) {
                             {/* Info Section */}
                             <div className="mt-4 pt-4 border-t border-slate-200/60 bg-white/60 backdrop-blur-md rounded-2xl p-4">
                                 <div className="flex items-center gap-3">
-                                    <div className={`p-2 rounded-xl ${features[activeIdx].bg}`}>
+                                    {/* <div className={`p-2 rounded-xl ${features[activeIdx].bg}`}>
                                         {React.cloneElement(features[activeIdx].icon, { size: 20 })}
-                                    </div>
+                                    </div> */}
                                     <div>
                                         <div className="font-bold text-slate-900 text-sm">
                                             {features[activeIdx].title}
