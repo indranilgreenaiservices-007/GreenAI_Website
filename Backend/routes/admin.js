@@ -1,15 +1,85 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User');
+const User = require('../models/gaiaccess');
+const PlatformUser = require('../models/user.model');
 const { protect, admin } = require('../middleware/authMiddleware');
 const sendEmail = require('../utils/sendEmail');
 
-// @desc    Get all users
+// @desc    Get all administrative users (employees)
 // @route   GET /api/admin/users
 // @access  Private/Admin
 router.get('/users', protect, admin, async (req, res) => {
     const users = await User.find({}).select('-password');
     res.json(users);
+});
+
+// @desc    Get platform user statistics
+// @route   GET /api/admin/platform-user-stats
+// @access  Private/Admin
+router.get('/platform-user-stats', protect, admin, async (req, res) => {
+    try {
+        const now = new Date();
+        const last7Days = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
+        const last30Days = new Date(now.getTime() - (30 * 24 * 60 * 60 * 1000));
+        const todayStart = new Date(now.setHours(0, 0, 0, 0));
+
+        const totalUsers = await PlatformUser.countDocuments();
+        const activeUsers7d = await PlatformUser.countDocuments({
+            lastLogin: { $gte: last7Days }
+        });
+        const newRegistrationsToday = await PlatformUser.countDocuments({
+            createdAt: { $gte: todayStart }
+        });
+        const inactiveUsers30d = await PlatformUser.countDocuments({
+            $or: [
+                { lastLogin: { $lt: last30Days } },
+                { lastLogin: { $exists: false } }
+            ]
+        });
+
+        // Users by Sector (Pie Chart data)
+        const sectorStats = await PlatformUser.aggregate([
+            { $group: { _id: '$sector', count: { $sum: 1 } } }
+        ]);
+
+        // User Growth Over Time (Line Chart data)
+        const growthStats = await PlatformUser.aggregate([
+            {
+                $group: {
+                    _id: {
+                        month: { $month: '$createdAt' },
+                        year: { $year: '$createdAt' }
+                    },
+                    count: { $sum: 1 }
+                }
+            },
+            { $sort: { '_id.year': 1, '_id.month': 1 } }
+        ]);
+
+        res.json({
+            totalUsers,
+            activeUsers7d,
+            newRegistrationsToday,
+            inactiveUsers30d,
+            sectorStats,
+            growthStats
+        });
+    } catch (error) {
+        console.error('Error fetching platform user stats:', error);
+        res.status(500).json({ message: 'Server error' });
+    }
+});
+
+// @desc    Get all platform users
+// @route   GET /api/admin/platform-users
+// @access  Private/Admin
+router.get('/platform-users', protect, admin, async (req, res) => {
+    try {
+        const users = await PlatformUser.find({}).select('-password').sort({ createdAt: -1 });
+        res.json(users);
+    } catch (error) {
+        res.status(500).json({ message: 'Server error' });
+    }
 });
 
 // @desc    Create new user

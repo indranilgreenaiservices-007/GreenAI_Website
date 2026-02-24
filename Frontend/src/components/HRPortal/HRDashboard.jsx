@@ -40,7 +40,7 @@ export default function HRDashboard() {
         if (path.includes("applicants")) return "Review the Applications";
         if (path.includes("interviews")) return "Interview Scheduling";
         if (path.includes("settings")) return "Portal Settings";
-        return "HR Dashboard";
+        return "Dashboard";
     };
 
     return (

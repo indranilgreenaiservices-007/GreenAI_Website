@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User');
+const User = require('../models/gaiaccess');
 const generateToken = require('../utils/generateToken');
 const { protect } = require('../middleware/authMiddleware');
 

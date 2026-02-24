@@ -1,0 +1,3165 @@
+[{
+  "_id": {
+    "$oid": "675f0046718a39d174cd2cbc"
+  },
+  "name": "Bhargav Dave",
+  "email": "bhargavdave1@gmail.com",
+  "password": "$2a$12$5cXibgTaTKEk188bwxLhZeDFQFEwAo6z41wnLNVaSB8wTWGal4At.",
+  "createdAt": {
+    "$date": "2024-12-15T16:13:58.055Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677fbae95951795f8c13b522"
+  },
+  "name": "Soumyaditya Mondal",
+  "email": "mondalsoumyaditya145@email.com",
+  "password": "$2a$12$p6nx1LwLtetfx3tdh/cW3urTXiucXfISs/evyTllKHOXTxz/xOpje",
+  "createdAt": {
+    "$date": "2025-01-09T12:02:49.790Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677fc16d5286378d29fef25e"
+  },
+  "name": "Rahul Kumar Chaudhary",
+  "email": "rahul.pivs@gmail.com",
+  "password": "$2a$12$BHAhbDxO5/ih4wGwDGYCYeJVMwQhBdXIS/BeuOKI83DXjFJVCrULi",
+  "createdAt": {
+    "$date": "2025-01-09T12:30:37.424Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678b35fd1baf6b06eb999995"
+  },
+  "name": "Dipasree",
+  "email": "dipasree.greenaiservices@gmail.com",
+  "password": "$2a$12$7wKS9v15MTbSvuIzPe3zf.zs8zkzkqyEnyzOGt/o/xCvTvR9Ajf9e",
+  "createdAt": {
+    "$date": "2025-01-18T05:02:53.920Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678b394c1baf6b06eb9999bf"
+  },
+  "name": "Bhargav Dave",
+  "email": "bhargavdave1@yahoo.in",
+  "password": "$2a$12$C/pXQ/jBpwjaDFa86YOdO.ebVtLREvn3DWf13qG42YmCPtbbKAhbO",
+  "createdAt": {
+    "$date": "2025-01-18T05:17:00.481Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678b6396d6a31ffd3e5650d7"
+  },
+  "name": "Susobhan Akhuli",
+  "email": "susobhanakhuli@gmail.com",
+  "password": "$2a$12$vhmiRJwMWrgd6H1dSaEyyOyfOLOPKgWyRtBj4NmO2rdVcoTWFPt1K",
+  "createdAt": {
+    "$date": "2025-01-18T08:17:26.261Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678b7a1079d5cd9dfbe0be67"
+  },
+  "name": "Kishan",
+  "email": "kishan_kachhadiya@daiict.ac.in",
+  "password": "$2a$12$LNatT22VpLZEANTDtXUxTu8oA.uyMswYX3gfMkAWFDlc5ewCAxFSW",
+  "createdAt": {
+    "$date": "2025-01-18T09:53:20.920Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678b7e9279d5cd9dfbe0bed5"
+  },
+  "name": "kaizad hansotia",
+  "email": "kaizad.group@gmail.com",
+  "password": "$2a$12$CG/e670yGHzGtfRnTztNNeEiAMLacSEdZ5MGEBXK5aXYkMqaladQW",
+  "createdAt": {
+    "$date": "2025-01-18T10:12:34.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678b89f3fa8c514b5a9f3633"
+  },
+  "name": "vibhuti",
+  "email": "vibhuti_patel@daiict.ac.in",
+  "password": "$2a$12$mQ8DD0ogvPUj6Wbf13l1cebLvPULBom/jaR3l/Y8pqn6mpwP1iv7O",
+  "createdAt": {
+    "$date": "2025-01-18T11:01:07.091Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678be5490fa9d66102d0e32c"
+  },
+  "name": "Subrata Mitra",
+  "email": "subratam2000@gmail.com",
+  "password": "$2a$12$qx1ahLOgzGLsncFE4e2x3OpkO1jFj6Khxw7NvRHBXponEhg8e0MW6",
+  "createdAt": {
+    "$date": "2025-01-18T17:30:49.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678be7ac0fa9d66102d0e364"
+  },
+  "name": "Prasenjit",
+  "email": "prasenjit.majumder@gmail.com",
+  "password": "$2a$12$.sXGG/NGh.HXJnBM6remNeVykeW3JFTgEejhn7ijfMGlyOV31A3We",
+  "createdAt": {
+    "$date": "2025-01-18T17:41:00.811Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678caeda9d9482438a309513"
+  },
+  "name": "prasenjit majumder",
+  "email": "prasenjit.maumder@gmail.com",
+  "password": "$2a$12$puvIlsA2ecC0MxcmSJWtUeMiv6mDXkaDpAjzslMytnjhzHHPtZxrS",
+  "createdAt": {
+    "$date": "2025-01-19T07:50:50.594Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d41e34cb7913a6af0da78"
+  },
+  "name": "Naitik Parekh",
+  "email": "parekhnaitik13@gmail.com",
+  "password": "$2a$12$b7S9cCCTgvydIukPJqh0E.3KxPGcJDcR/1e0DEyFPgWCxvXdfsXYO",
+  "createdAt": {
+    "$date": "2025-01-19T18:18:11.369Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d6152054cb760ce676b30"
+  },
+  "name": "SRIJONI MAJUMDAR",
+  "email": "majumdarsrijoni@gmail.com",
+  "password": "$2a$12$JmhjHrcjWPvaQo8D1sV4euUzUJSPkm7WmKm4rzRirGB7tub9XKfo2",
+  "createdAt": {
+    "$date": "2025-01-19T20:32:18.964Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678e42e93d5f563e2ecbc552"
+  },
+  "name": "Admin GAI",
+  "email": "admin@greenai.services",
+  "googleId": "108785142710318640798",
+  "createdAt": {
+    "$date": "2025-01-20T12:34:49.403Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678e430a3d5f563e2ecbc555"
+  },
+  "name": "Sabyasachi Chatterjee",
+  "email": "sabyasachi.greenaiservices@gmail.com",
+  "googleId": "113179469988614132062",
+  "createdAt": {
+    "$date": "2025-01-20T12:35:22.723Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678e51f8365f78fdce2dbbdb"
+  },
+  "name": "Adesh Kumar",
+  "email": "adeshsahil16@gmail.com",
+  "googleId": "114544483758644459175",
+  "createdAt": {
+    "$date": "2025-01-20T13:39:04.035Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67977d31f555297f5f1b8674"
+  },
+  "name": "libin",
+  "email": "varghese.libin1@gmail.com",
+  "password": "$2a$12$8p5c68kQRt5EMaNXfj1Lk.DfGNs0tdrzEycE1FKS6L0mHbqLS/Xqi",
+  "createdAt": {
+    "$date": "2025-01-27T12:33:53.740Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679b3bc49a2735a84d0eca68"
+  },
+  "name": "Suryanshu Paul",
+  "email": "suryanshupaul1990@gmail.com",
+  "googleId": "103877333629696694597",
+  "createdAt": {
+    "$date": "2025-01-30T08:43:48.651Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679c7b34974f97ff8ce243ab"
+  },
+  "name": "Asif Ekbal",
+  "email": "asif@iitj.ac.in",
+  "googleId": "102216606814083078051",
+  "createdAt": {
+    "$date": "2025-01-31T07:26:44.004Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ac282b010912a170e3493b"
+  },
+  "name": "Myfake2 Myfake2",
+  "email": "myfakeok2@gmail.com",
+  "googleId": "109696662806810492178",
+  "createdAt": {
+    "$date": "2025-02-12T04:48:43.953Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b444d4fc7df11367ebfb6d"
+  },
+  "name": "zoey",
+  "email": "michellecoco333@gmail.com",
+  "googleId": "112049636106612759495",
+  "createdAt": {
+    "$date": "2025-02-18T08:29:08.760Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c33c2feb4d5566e651cb8d"
+  },
+  "name": "Amber Agarwal",
+  "email": "iamberagarwal@gmail.com",
+  "googleId": "113553435208224495823",
+  "createdAt": {
+    "$date": "2025-03-01T16:56:15.965Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c6c05b3b0ba72ca54ac416"
+  },
+  "name": "Sanna Tauriainen",
+  "email": "satauriai@hotmail.com",
+  "password": "$2a$12$BXLzgJBujsXCtrrH.gAMd.e39SyfNGv45ZNULJp9wammMZSHXHT.S",
+  "createdAt": {
+    "$date": "2025-03-04T08:56:59.252Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cae166c1ccad1bb02ec5d4"
+  },
+  "name": "Hisholo Lorin",
+  "email": "haruhirokurosagi007@gmail.com",
+  "googleId": "109202878580982456007",
+  "createdAt": {
+    "$date": "2025-03-07T12:07:02.515Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb252d6a89e867bf492a8d"
+  },
+  "name": "Raj Shah",
+  "email": "raj2100789@gmail.com",
+  "password": "$2a$12$VRMLMxRmvxj9RauQRhadVu12h7WwSWAY27y4jnDdjjbuqNY5BRayu",
+  "createdAt": {
+    "$date": "2025-03-07T16:56:13.554Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cea4d78659db0799a29b59"
+  },
+  "name": "Vamsi Novel",
+  "email": "vamsi.novel@centotech.com",
+  "password": "$2a$12$M1ODCv5ksV312XOX9Pczz.ThJLcdN6UW3lFHd/bL3iW39D0Iah7Fm",
+  "createdAt": {
+    "$date": "2025-03-10T08:37:43.749Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cee5ede4ec3b36a2c67790"
+  },
+  "name": "Irri Vijay kumar",
+  "email": "irrivijay@gmail.com",
+  "password": "$2a$12$z4cHQE9X.B6dNG6v95G5Tudboh9YtOEifOqFOE8GaA465U1aNoJd2",
+  "createdAt": {
+    "$date": "2025-03-10T13:15:25.814Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cf00f3cb7c37eac4bec3d0"
+  },
+  "name": "SWATI SINHA NUJS",
+  "email": "llmdsdpl224019@nujs.edu",
+  "googleId": "108305557417466792674",
+  "createdAt": {
+    "$date": "2025-03-10T15:10:43.868Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cf4ace9ad4a4d050ca6128"
+  },
+  "name": "NEELANKO CHATTOPADHYAY NUJS",
+  "email": "llmdsdpl224006@nujs.edu",
+  "googleId": "110383368768441400513",
+  "createdAt": {
+    "$date": "2025-03-10T20:25:50.240Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d02ddd49219dea8f406046"
+  },
+  "name": "Sannidhya Seth",
+  "email": "llmdsdpl224015@nujs.edu",
+  "password": "$2a$12$QJoYdkZtznHAbyFMvHo.xuWYTtR81f25uv5S.TdyrNdkyv35tBOs2",
+  "createdAt": {
+    "$date": "2025-03-11T12:34:37.019Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d06f473e52183b3448f6d1"
+  },
+  "name": "Bheshaj Joshi",
+  "email": "bheshaj@goswirl.live",
+  "googleId": "105371373813551368072",
+  "createdAt": {
+    "$date": "2025-03-11T17:13:43.506Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d08ecae1fe7af3ab15e21a"
+  },
+  "name": "SUTAPA MUKHOPADHYAY NUJS",
+  "email": "llmdsdpl224002@nujs.edu",
+  "googleId": "105532708335934615648",
+  "createdAt": {
+    "$date": "2025-03-11T19:28:10.615Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d093f0e1fe7af3ab15e221"
+  },
+  "name": "Asmita Mitra",
+  "email": "llmdsdpl224010@nujs.edu",
+  "password": "$2a$12$BvgmYTDtwMUk/zd/6PrlGOP/ssO1N8iv.dm7SQI3tJWMqld/2RYKm",
+  "createdAt": {
+    "$date": "2025-03-11T19:50:08.136Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d0a0cbbd54f4d57d9bacb9"
+  },
+  "name": "ABHINAV DWIVEDI NUJS",
+  "email": "llmdsdpl224004@nujs.edu",
+  "googleId": "116727492536654749142",
+  "createdAt": {
+    "$date": "2025-03-11T20:44:59.946Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d0f1e47cdb9892172eb0ee"
+  },
+  "name": "SMARANIKA SEN NUJS",
+  "email": "llmdsdpl224014@nujs.edu",
+  "googleId": "110043776744995347219",
+  "createdAt": {
+    "$date": "2025-03-12T02:31:00.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d11ded96ec764264436399"
+  },
+  "name": "BHAGYASHREE BAGCHI NUJS",
+  "email": "llmdsdpl224020@nujs.edu",
+  "googleId": "108903397664237203313",
+  "createdAt": {
+    "$date": "2025-03-12T05:38:53.905Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d11e7e96ec7642644363b4"
+  },
+  "name": "Abhishek Saha",
+  "email": "llmdsdpl224005@nujs.edu",
+  "password": "$2a$12$UItbaPCSnSgSvHZtXEc3o.XnD.TzuvG070wSf8/q.2DN3WvSYjYQa",
+  "createdAt": {
+    "$date": "2025-03-12T05:41:18.708Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d126ad96ec764264436413"
+  },
+  "name": "Adarsh Philip Roy",
+  "email": "royadarshphilip321@gmail.com",
+  "googleId": "110509856671939946932",
+  "createdAt": {
+    "$date": "2025-03-12T06:16:13.887Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d19523ad69ec230a2de5fe"
+  },
+  "name": "SONAM LAMA NUJS",
+  "email": "llmdsdpl224001@nujs.edu",
+  "googleId": "107478263914849844393",
+  "createdAt": {
+    "$date": "2025-03-12T14:07:31.841Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d19f2650c2d01d3685c7cd"
+  },
+  "name": "SOHAM BOSE NUJS",
+  "email": "llmdsdpl224024@nujs.edu",
+  "googleId": "115633853901420353256",
+  "createdAt": {
+    "$date": "2025-03-12T14:50:14.925Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d1a18f50c2d01d3685c7e5"
+  },
+  "name": "SIDHANT SINGH",
+  "email": "llmdsdpl224027@nujs.edu",
+  "googleId": "107023622646862773919",
+  "createdAt": {
+    "$date": "2025-03-12T15:00:31.691Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d1b38bb5c36f557b2cf07a"
+  },
+  "name": "SNIGDHA GUPTA NUJS",
+  "email": "llmdsdpl224022@nujs.edu",
+  "googleId": "118434358158474971219",
+  "createdAt": {
+    "$date": "2025-03-12T16:17:15.404Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d2a82af11cd4f341639a83"
+  },
+  "name": "RAMSHA HAQUE NUJS",
+  "email": "llmdsdpl224026@nujs.edu",
+  "googleId": "114286758789253919095",
+  "createdAt": {
+    "$date": "2025-03-13T09:40:58.805Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d2fd1aa0575ca301220145"
+  },
+  "name": "Anubhab Das Biswas",
+  "email": "llmdsdpl224025@nujs.edu",
+  "password": "$2a$12$o9mJH4HXmxAzqw/I3B.lIeiIgj.WA6KCfzg5ixld2dZDKidqvSpO2",
+  "createdAt": {
+    "$date": "2025-03-13T15:43:22.980Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d41f4933722d805d622b1a"
+  },
+  "name": "Uminber Teams",
+  "email": "tools@uminber.in",
+  "googleId": "112703613153780549791",
+  "createdAt": {
+    "$date": "2025-03-14T12:21:29.694Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d9c85fdf7e7a4e9e2f3135"
+  },
+  "name": "SAMPURNA BHATTACHARYYA NUJS",
+  "email": "llmdsdpl224003@nujs.edu",
+  "googleId": "115455895958892852694",
+  "createdAt": {
+    "$date": "2025-03-18T19:24:15.297Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67dc1e3e622182373491dc6d"
+  },
+  "name": "Guillermo Britos",
+  "email": "guiebritos@gmail.com",
+  "googleId": "104793159273745742626",
+  "createdAt": {
+    "$date": "2025-03-20T13:55:10.442Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e26cc3ad3d9cc3dcbd26c9"
+  },
+  "name": "Hisholo Lorin",
+  "email": "lorinhisholo@gmail.com",
+  "password": "$2a$12$K9/NKpzL3qt.1uvlvZ9lV.HwPBAe5.nIB69F1CYknL7iItnSwQ5qK",
+  "createdAt": {
+    "$date": "2025-03-25T08:43:47.185Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ee4e4fca6e475b078ff18e"
+  },
+  "name": "Vibhuti Patel",
+  "email": "vibhupatel.002@gmail.com",
+  "password": "$2a$12$7SBZJwYyuxynRNxs05w9O.vNSl0vWqeCURUArjBkdVYBGfi453IVO",
+  "createdAt": {
+    "$date": "2025-04-03T09:01:03.798Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ee5c081be6c9a41770fd61"
+  },
+  "name": "Mayur Shrimali",
+  "email": "mayurshrimali88@gmail.com",
+  "password": "$2a$12$bT.v/Chs2t7qU3rT0fAz0eSY6l6Lhy/rFnLBHt8jwiO2zLyq9v.WG",
+  "createdAt": {
+    "$date": "2025-04-03T09:59:36.458Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ee60901be6c9a41770fd8e"
+  },
+  "name": "Nikita Nagar",
+  "email": "nikitachauhan147@gamil.com",
+  "password": "$2a$12$qTli6EJbPhesOpULysiALOAnanM.0kOMMr58zGfiTu.Hv3Pup7gV2",
+  "createdAt": {
+    "$date": "2025-04-03T10:18:56.863Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fb746807e6bca409ed92cb"
+  },
+  "name": "PRUTHVIJEETGIRI GOSWAMI",
+  "email": "goswamipruthvijeetgiri98@gmail.com",
+  "googleId": "103699315466724655618",
+  "createdAt": {
+    "$date": "2025-04-13T08:23:04.458Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fbae075ae2ffc1ea731964"
+  },
+  "name": "Jitendragiri Goswami",
+  "email": "advocatejeet1008@gmail.com",
+  "googleId": "102384953012070267818",
+  "createdAt": {
+    "$date": "2025-04-13T12:28:55.759Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fbb0ee81d86c953c835f28"
+  },
+  "name": "jankhana goswami",
+  "email": "goswamijank@gmail.com",
+  "googleId": "109198273212936672012",
+  "createdAt": {
+    "$date": "2025-04-13T12:41:18.788Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6800c49f332376264c5314c1"
+  },
+  "name": "Neelasha Sen",
+  "email": "neelasha.sen@gmail.com",
+  "googleId": "105150082285374650671",
+  "createdAt": {
+    "$date": "2025-04-17T09:06:39.862Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6804b32e0fc3db7e9576c98b"
+  },
+  "name": "RISU GUPTA",
+  "email": "risugupta999@gmail.com",
+  "googleId": "117456371972929651691",
+  "createdAt": {
+    "$date": "2025-04-20T08:41:18.945Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6804b43d0fc3db7e9576c997"
+  },
+  "name": "Aakriti Tandon",
+  "email": "aakrititandon211@gmail.com",
+  "password": "$2a$12$k6ovZBYiH4PfkCfyCsyWxu568Ep.x/a2p7.jgZ19fuAOrj/Yy4Svm",
+  "createdAt": {
+    "$date": "2025-04-20T08:45:49.796Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6804c1d70fc3db7e9576c9a2"
+  },
+  "name": "Yuvraj Singh",
+  "email": "yuvraj5785singh@gmail.com",
+  "password": "$2a$12$qZpY0GojRyP47MJnPMfrJe6WZYbZ1K5uLfryGnXBRgadfpFNmh2CS",
+  "createdAt": {
+    "$date": "2025-04-20T09:43:51.880Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805dd7a427b9d3e1c1e84fe"
+  },
+  "name": "Vishal keshri",
+  "email": "vishalkeshri2001@gmail.com",
+  "password": "$2a$12$IFZGhSWUnlSK769VC0ntaO3aNYf0cLNN3tewWTj9rlu7uLAwgAh2u",
+  "createdAt": {
+    "$date": "2025-04-21T05:54:02.476Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680e3435045759ae5e6a6d18"
+  },
+  "name": "2024 11084",
+  "email": "202411084@daiict.ac.in",
+  "googleId": "102770824336127963038",
+  "createdAt": {
+    "$date": "2025-04-27T13:42:13.319Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6812d5de0d358639025ed463"
+  },
+  "name": "david chaudhary",
+  "email": "munachaudhary375@gmail.com",
+  "googleId": "100396599306555551471",
+  "createdAt": {
+    "$date": "2025-05-01T02:01:02.661Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681b02fe22d27fa66474f843"
+  },
+  "name": "dao quang thang",
+  "email": "menu10914@gmail.com",
+  "googleId": "110919136385064739119",
+  "createdAt": {
+    "$date": "2025-05-07T06:51:42.547Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681d92c6c11f23b9fe88fc1d"
+  },
+  "name": "Norman Green",
+  "email": "greendennis417@yahoo.com",
+  "password": "$2a$12$lVQ0LNEsQzJ3QMMNPPxSG.eRfPREEtoEIIjRqgHxDxho5PxPNw8Y6",
+  "createdAt": {
+    "$date": "2025-05-09T05:29:42.790Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68223cd86d49b342ee220a1c"
+  },
+  "name": "Akash C",
+  "email": "itsstillblank@gmail.com",
+  "googleId": "109958773624227540528",
+  "createdAt": {
+    "$date": "2025-05-12T18:24:24.393Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682438a5160b0c679952e555"
+  },
+  "name": "Sankhadeep Chakrabarti",
+  "email": "sankhadeep.chakrabarti@greenai.services",
+  "googleId": "101508578857481675956",
+  "createdAt": {
+    "$date": "2025-05-14T06:31:01.882Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824897bdfd2fd0b474bf5c1"
+  },
+  "name": "Rajarshi",
+  "email": "mlmraj0303@gmail.com",
+  "password": "$2a$12$c4GndTTxIfalm66MdN6fveUIqlPufgiFRB5XNAwIHI.hwUMCM1Pbq",
+  "createdAt": {
+    "$date": "2025-05-14T12:15:55.342Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68258d0f24257a03c6c83f58"
+  },
+  "name": "Shouvik Kumar Guha",
+  "email": "shouvikkumarguha@gmail.com",
+  "password": "$2a$12$C/iwx9EYZlGac/7hWRQlb.MPjfFxrgocgtUFuTyaKqfyUeHt1c.8y",
+  "createdAt": {
+    "$date": "2025-05-15T06:43:27.556Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825aafff7efb26c3ce9e734"
+  },
+  "name": "RØYÃL RÜPÄM",
+  "email": "451dmaity@gmail.com",
+  "googleId": "100993818969737495383",
+  "createdAt": {
+    "$date": "2025-05-15T08:51:11.993Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825ab008d31200f4a334e52"
+  },
+  "name": "Prangya Quila",
+  "email": "2001prangyaquila@gmail.com",
+  "googleId": "101073310223617538742",
+  "createdAt": {
+    "$date": "2025-05-15T08:51:12.604Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825ab00f7efb26c3ce9e737"
+  },
+  "name": "Sayan Das",
+  "email": "sayandas070105@gmail.com",
+  "password": "$2a$12$Krf75pJsIEOlD4ya7DZ.8eUd6oIn17ElJ.RPOspFJa7PnkYgMASMy",
+  "createdAt": {
+    "$date": "2025-05-15T08:51:12.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825ab0bf7efb26c3ce9e73e"
+  },
+  "name": "Asfa Khan",
+  "email": "asfakhan0398@gmail.com",
+  "password": "$2a$12$g7yTdYplFqUazD4GHDdjfO5KgUyGfCeUrdP6/1cFYDRiOM529lKCS",
+  "createdAt": {
+    "$date": "2025-05-15T08:51:23.124Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825abec0baf78205c5cef81"
+  },
+  "name": "Abu Samme Ahamad Hasan Imran",
+  "email": "abuimran8440@gmail.com",
+  "googleId": "113530373925511332442",
+  "createdAt": {
+    "$date": "2025-05-15T08:55:08.716Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825ac7d46d52f0773b1daf8"
+  },
+  "name": "Soumyadip Ghosh",
+  "email": "ghoshsoumyadip528@gmail.com",
+  "googleId": "117223995326622297627",
+  "createdAt": {
+    "$date": "2025-05-15T08:57:33.542Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825aef746d52f0773b1db02"
+  },
+  "name": "Susmita bhunia",
+  "email": "susmitabhunia816@gmail.com",
+  "password": "$2a$12$0p.zsBEzjAbs/RpkU48I..EXXTajVBubTlzNZmIYOBM9Zbk4V.3Du",
+  "createdAt": {
+    "$date": "2025-05-15T09:08:07.985Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825cb5f58495d245801b2bd"
+  },
+  "name": "Neeraj Mathur",
+  "email": "neerajmathur0107@gmail.com",
+  "password": "$2a$12$AkwE074B4MB1PvJKuIhSYe177.qtiFwykffIgvcZytY8WyKC/ySP6",
+  "createdAt": {
+    "$date": "2025-05-15T11:09:19.998Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68260eb375839bec3e7cc6ba"
+  },
+  "name": "Kalyan",
+  "email": "heroicdevil991@gmail.com",
+  "password": "$2a$12$GH8RaE1QpUUbEd.rtX7EkOm/KiOsvtUS.A4O.31xbdTDRw7nIhL7q",
+  "createdAt": {
+    "$date": "2025-05-15T15:56:35.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682822625702540b3ca6596b"
+  },
+  "name": "bipul niogi",
+  "email": "bipulniogi8@gmail.com",
+  "googleId": "111901029963754620939",
+  "createdAt": {
+    "$date": "2025-05-17T05:45:06.936Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c436b3d700ece72ab0883"
+  },
+  "name": "Suchandra Banerjee",
+  "email": "suchandrabanerjee24@gmail.com",
+  "password": "$2a$12$FPfydyPeB0cVbNDdnhAjV.8RCP8micMsmY7lUOEgEmeI4u0uG7VwS",
+  "createdAt": {
+    "$date": "2025-05-20T08:55:07.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c5f0d7e82477283cbf480"
+  },
+  "name": "S Karan",
+  "email": "ctd.dgmbsscm@gmail.com",
+  "googleId": "106111103641945778241",
+  "createdAt": {
+    "$date": "2025-05-20T10:53:01.359Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c97eb8301216d6937cd19"
+  },
+  "name": "Salehin Gazi",
+  "email": "sgazi23456b@gmail.com",
+  "password": "$2a$12$dQVwUXZCCc5alyhuGnEy0.PPh/nWI5KIW12P11uN6CAS./4rdtekG",
+  "createdAt": {
+    "$date": "2025-05-20T14:55:39.868Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682f2e404857f799fe9aa1be"
+  },
+  "name": "Product GAI",
+  "email": "product@greenai.services",
+  "googleId": "109473395922378046429",
+  "createdAt": {
+    "$date": "2025-05-22T14:01:36.179Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682f307474c5f10c42516007"
+  },
+  "name": "Manish Kumar",
+  "email": "saritamandal336@gmail.com",
+  "googleId": "104496020468074948156",
+  "createdAt": {
+    "$date": "2025-05-22T14:11:00.054Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68300496f987622b39f4a40e"
+  },
+  "name": "Manish Kumar",
+  "email": "manish.kumar@greenai.services",
+  "password": "$2a$12$vjwDQuGSdfYBzpleObs6YeXO7mbtPAUiuE4lqH028ILVHrq1uAYHC",
+  "createdAt": {
+    "$date": "2025-05-23T05:16:06.795Z"
+  },
+  "__v": 0,
+  "verified": false,
+  "lastPasswordChange": {
+    "$date": "2025-08-27T10:39:24.915Z"
+  },
+  "resetPasswordExpires": {
+    "$date": "2025-10-30T10:52:39.863Z"
+  },
+  "resetPasswordToken": "13415bcf674e3a1a997b57fe7590f97d1acde8840b85449979beb3d284a50162"
+},
+{
+  "_id": {
+    "$oid": "683026f20fa8388a8329601e"
+  },
+  "name": "Manish",
+  "email": "manishtesting100@gmail.com",
+  "password": "$2a$12$rzVotngJHjas34xswtM4R.97DOsXXD7DTjg4O0r7j/3nIh5LX1B3G",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-05-23T07:42:42.246Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6830394d212a6b992788c8fc"
+  },
+  "name": "a",
+  "email": "alazosale41@gmail.com",
+  "password": "$2a$12$NA95OtBg/30XUqf.KDKtiuVngmWYxoLK/pZSfR0rh765QR8EQoN/S",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-05-23T09:01:01.382Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68318093bab83d548140335d"
+  },
+  "name": "Nirajgiri",
+  "email": "advnirajgoswami@gmail.com",
+  "password": "$2a$12$/n3egk1VOmz1K/BT1jkpV.KRRCv6lbF6AW3T5CaJe0xzg1VZCamhK",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-05-24T08:17:23.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68318df967323686bb4e3715"
+  },
+  "name": "Sonal Gosai",
+  "email": "sonalgosai136@gmail.com",
+  "googleId": "104880065913201541153",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-05-24T09:14:33.277Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6835d06e5e60573009eec088"
+  },
+  "name": "احمد عصام",
+  "email": "ahmed24essam7572@gmail.com",
+  "googleId": "112058586467858718531",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-05-27T14:47:10.940Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683949d1353c098c9528e694"
+  },
+  "name": "Alazo Sale",
+  "email": "alazo.greenaiservices@gmail.com",
+  "googleId": "110955285069263115536",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-05-30T06:01:53.006Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683d586d196c4510dda7b2a0"
+  },
+  "name": "Alazo Sale",
+  "email": "alazo.sale@greenai.services",
+  "googleId": "109132236722812406367",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-02T07:53:17.379Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684506ce202e0efda845ccff"
+  },
+  "name": "Vasanthika Srinath",
+  "email": "vasanthika@gmail.com",
+  "googleId": "107565935334492464287",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-08T03:43:10.921Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684835b53878f10ecccb1a39"
+  },
+  "name": "Rupam Mal",
+  "email": "rupamdm629@gmail.com",
+  "googleId": "114680555016940290653",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-10T13:40:05.361Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849478d2cb191db074dc08b"
+  },
+  "name": "Manish",
+  "email": "manishmandal9734@gmail.com",
+  "password": "$2a$12$sCxP12HTDajQKbJ4HuP9U.BJFJNSD434CcElyIxBsUVyln0CkZp.u",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-06-11T09:08:29.414Z"
+  },
+  "__v": 0,
+  "lastPasswordChange": {
+    "$date": "2025-12-03T06:31:58.079Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68494e8ff5544768d3249da8"
+  },
+  "name": "srikanta",
+  "email": "srikantasaw90@outlook.com",
+  "password": "$2a$12$MJYtIG4YdfrsmF5rJ9QiruDqc5AcofVMgmJe/a4xuTpDGc7UF4oji",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-11T09:38:23.786Z"
+  },
+  "__v": 0,
+  "otp": "183555",
+  "otpExpires": {
+    "$date": "2025-06-11T09:48:24.145Z"
+  },
+  "resetPasswordExpires": {
+    "$date": "2025-07-18T05:48:32.156Z"
+  },
+  "resetPasswordToken": "6c355c644fe3196d437a2d4f2739bb9a9c78d9b9f95eb1a0de850bfbb21b6163",
+  "lastPasswordChange": {
+    "$date": "2025-07-18T05:39:50.151Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684abae46bc1691b458bdb71"
+  },
+  "name": "compliance GreenAi Services",
+  "email": "compliance@greenai.services",
+  "googleId": "114817601980934183568",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-12T11:32:52.088Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684bb1dc4ab1b358a7b50991"
+  },
+  "name": "Manish",
+  "email": "manish.greenaiservices@gmail.com",
+  "password": "$2a$12$wHjUXyqTysozUhKhv5kXHOuK/SGqIRM3XsrpiUZtpl/7JQjuUxh3.",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-06-13T05:06:36.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684d94c7d95309db574c9200"
+  },
+  "name": "Salehin Gazi A157",
+  "email": "sgazi2345b@gmail.com",
+  "googleId": "107159535301144439528",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-14T15:27:03.354Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68516bf96664135acc195401"
+  },
+  "name": "B Bagchi",
+  "email": "bhagyashreebagchi1999@gmail.com",
+  "googleId": "110637541990980236725",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-17T13:22:01.291Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68526f8e6047dc60097e2d6f"
+  },
+  "name": "Girijananda Jana",
+  "email": "gnjana@gmail.com",
+  "password": "$2a$12$jcFvAZYIUIAl8n2OO5GUPOw51yE3eB2s2Co69ewlrfwcvTbHy3r42",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-06-18T07:49:34.852Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685286ea9728d0e0d9e06463"
+  },
+  "name": "Subrata Mitra",
+  "email": "vishwamitra71@gmail.com",
+  "googleId": "111042983781119450259",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-18T09:29:14.339Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6852941489421b1dc3d67847"
+  },
+  "name": "Prajwal Karmore",
+  "email": "pk244002@gmail.com",
+  "googleId": "111796707905696187034",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-18T10:25:24.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6853e181cdf61ffd66643d43"
+  },
+  "name": "tom weng",
+  "email": "tomweng9@gmail.com",
+  "googleId": "107411188588801151814",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-19T10:08:01.262Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6854ec93787c765a0b5e73f6"
+  },
+  "name": "Subrata Mitra",
+  "email": "subrata.mitra@greenai.services",
+  "googleId": "117271944509504285999",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-20T05:07:31.180Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68556eb3408b990fb9fd48ba"
+  },
+  "name": "Avishek Basu",
+  "email": "r8scope@gmail.com",
+  "password": "$2a$12$6Ebp76oo3fCJpqtP7qnX5ueOGmtUdJfVw6jgHWk1gXfpVDevUeOX2",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-06-20T14:22:43.195Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685587975ac28b492f535995"
+  },
+  "name": "Sanchi",
+  "email": "sanchariroybhb@gmail.com",
+  "googleId": "113114602174065553715",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-20T16:08:55.222Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68592a81128fc927f2b0bc0f"
+  },
+  "name": "Alazo Sale",
+  "email": "alazosale2001@gmail.com",
+  "googleId": "109138747555164224514",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-23T10:20:49.641Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68593d70b04af0010a93e584"
+  },
+  "name": "Partha Rajput",
+  "email": "parthamajhi08@gmail.com",
+  "googleId": "111647882941474175700",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-23T11:41:36.417Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685a5aab51123c60a251e555"
+  },
+  "name": "Sujoy 18",
+  "email": "sujoyrana5050@gmail.com",
+  "googleId": "110073782969547811433",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-24T07:58:35.556Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685ab8cbc32791d96e3d0b67"
+  },
+  "name": "Arbaz Khan",
+  "email": "arbaz67890@gmail.com",
+  "googleId": "118087769826095942773",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-24T14:40:11.040Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685e4ff0faa6cc5df4ff9e8d"
+  },
+  "name": "Dipasree Pal",
+  "email": "dipasree.pal@greenai.services",
+  "googleId": "106602497520874929297",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-27T08:01:52.178Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68614e7aeb47cd54c089b282"
+  },
+  "name": "Rajesh Islam",
+  "email": "rajeshislam20081005@gmail.com",
+  "googleId": "111057632633545649513",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-29T14:32:26.371Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6861507eeb47cd54c089b2a3"
+  },
+  "name": "Afthap hossen",
+  "email": "afthaphossen8@gmail.com",
+  "password": "$2a$12$cYXZ99HfsbnJySxgysI7MOM.UoushikjiFGbX4vzFAQhMzqFrKnZK",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-06-29T14:41:02.370Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-06-29T14:41:02.950Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68629378bef146ef23ef6684"
+  },
+  "name": "Maa Tara",
+  "email": "maataraplants@gmail.com",
+  "googleId": "111324226351199328230",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-06-30T13:39:04.963Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6863dd01beb5280d6a377130"
+  },
+  "name": "srikanta",
+  "email": "srikantasaw90@gmail.com",
+  "googleId": "116083948724802433052",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-01T13:05:05.004Z"
+  },
+  "__v": 0,
+  "lastPasswordChange": {
+    "$date": "2025-07-02T06:16:34.394Z"
+  },
+  "password": "$2a$12$hJv1vvBdNm6vz1pR9ivZreQqlc9VaiQqGeN507wj25nFbpEN2/xSy"
+},
+{
+  "_id": {
+    "$oid": "686a19cd479eaa9eae9bf88d"
+  },
+  "name": "Sathi Panja",
+  "email": "sathipanja54@gmail.com",
+  "googleId": "100947545338288925494",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-06T06:38:05.644Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686bceef64bed30cb0cbb55f"
+  },
+  "name": "kaushik dey",
+  "email": "kaushikdeyrbm@gmail.com",
+  "googleId": "103875059784448932084",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-07T13:43:11.507Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686d409d68a6df543abd1ec4"
+  },
+  "name": "Jo",
+  "email": "souvanikkundu6@gmail.com",
+  "password": "$2a$12$INdSqPHyww9f073LGTllXOA8DG5Uhn33kerypNn3BmK85TXiDDrmG",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-07-08T16:00:29.165Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-07-08T16:00:29.489Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686d40bdfa8d86d57c91ed29"
+  },
+  "name": "Supratim Dhar",
+  "email": "supratim.dhar@gmail.com",
+  "password": "$2a$12$FiLSoZ7b2TTLKlPa8ZX.AetDHx8LVeV8rFFpy0uvuklk5Z0tPTB2O",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-07-08T16:01:01.925Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-07-08T16:01:02.302Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686e526fd91c5ee22f1ba770"
+  },
+  "name": "Subham Rungta",
+  "email": "s.rrediffmail@gmail.com",
+  "googleId": "104092254998819268393",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-09T11:28:47.723Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6878ec1a65057179d0662f6d"
+  },
+  "name": "Akash Chakraborty",
+  "email": "akash.greenaiservices@gmail.com",
+  "googleId": "115100869907876293690",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-17T12:27:06.841Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687f2ae899d90d5207609492"
+  },
+  "name": "Greenai",
+  "email": "renivi1647@hadvar.com",
+  "password": "$2a$12$c9EiCwkWihhbk1mwAbhXvOrVQvf/13JMlaMkw5TOzEXlYi/8E4qTK",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-07-22T06:08:40.615Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-07-22T06:08:40.992Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "687f8016d0f077feda62040c"
+  },
+  "name": "Souvik Roy",
+  "email": "souvikroy5@gmail.com",
+  "googleId": "115895037605173212091",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-22T12:12:06.050Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68809a3993acb6012546d6d0"
+  },
+  "name": "Anwesha Majumder",
+  "email": "majumder.anwesha17@gmail.com",
+  "googleId": "112738807507157429120",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-23T08:15:53.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688164cb04def3f395a25cbf"
+  },
+  "name": "Debraj",
+  "email": "dtarafder@steorasystems.com",
+  "password": "$2a$12$j2tDck4WwP/sWXAX0QytvupSu./Q9fpSNf1eb0BALd02T2JEcUkT6",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-07-23T22:40:11.126Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-07-23T22:40:11.463Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6884d7ae01fa5f08319c6d3e"
+  },
+  "name": "Dr.UPENDRA TRIVEDI HOMEOPATHY",
+  "email": "drupendra.trivedi55@gmail.com",
+  "googleId": "113620614197674361432",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-26T13:27:10.350Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6884dad7f556ae69ad19bcaa"
+  },
+  "name": "milan pradhan",
+  "email": "milan1997m@gmail.com",
+  "googleId": "110695133931055327011",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-26T13:40:39.489Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6884f2cf54cd4f3f0f3d13f2"
+  },
+  "name": "RAHUL",
+  "email": "foxutpqdbbhuxqowas@fxavaj.com",
+  "password": "$2a$12$RXTazStSNt7EhIcbSv5hWeebQl2p01wW93UGDb7zCwP0XUq1XT9PS",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-07-26T15:22:55.513Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-07-26T15:22:55.842Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6887c0372e9a497aaa099c73"
+  },
+  "name": "Temp Mail Patel",
+  "email": "tempmailpatel@gmail.com",
+  "googleId": "115443869430479938460",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-28T18:23:51.610Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688a2ad1a485434769864b76"
+  },
+  "name": "Manmeet Singh",
+  "email": "kalsinarinder68@gmail.com",
+  "googleId": "106876620383799667794",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-30T14:23:13.255Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688a3d27e5c825f493ef604a"
+  },
+  "name": "Pousali Kundu",
+  "email": "pousalikundu@gmail.com",
+  "password": "$2a$12$LZ/xRHFhxofKXgFjS0A.8uH5Il8r4ISLkVItaQhLFYEJMUP2YDFbC",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-07-30T15:41:27.083Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-07-30T15:41:27.460Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688ad195289eec7311093ca4"
+  },
+  "name": "Bgfdfdf Hiurf",
+  "email": "bgfdfdfhiurf@gmail.com",
+  "googleId": "111425137232060489909",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-07-31T02:14:45.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688bd16bbd443739df714e62"
+  },
+  "name": "Anish Banerjee",
+  "email": "anishbanerjee1902@gmail.com",
+  "password": "$2a$12$yKGrPvD2S9NOYsSxo7P14uzSY7Gqh.zwrSN3dM5CbTkHaBYRba2s2",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-07-31T20:26:19.793Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-07-31T20:26:20.122Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688c9dab5fef9450a504404b"
+  },
+  "name": "Rajoshree Banik",
+  "email": "rajoshree.media@gmail.com",
+  "password": "$2a$12$WMMHLA8LOlwRP39OcBXrmexe3w5oU/i61XG3ZceCkjhjtynwwoXi6",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-01T10:57:47.533Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-01T10:57:47.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6890586ff87fa0ffd0855478"
+  },
+  "name": "Arpit",
+  "email": "arpit.dampmpl2023@learner.manipal.edu",
+  "password": "$2a$12$EGEvlg8S0O6Dk6.h95ZuXuJJgM0Q1lZ3vjbXVJcBRqPwWQHwNfaxK",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-04T06:51:27.638Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-04T06:51:28.024Z"
+  },
+  "__v": 0,
+  "otp": "961523",
+  "otpExpires": {
+    "$date": "2025-08-04T07:01:28.033Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68921cb6c52e8962ebf41329"
+  },
+  "name": "Chanda hasmat",
+  "email": "chanda.hasmat12@gmail.com",
+  "password": "$2a$12$BPnyJZ7XBcyBStkjAdINhejx6VdO9Ggn8dBvpXz38BEkTBAAfRV2O",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-05T15:01:10.124Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-05T15:01:10.456Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "689240ee3eb4af4f28776bbd"
+  },
+  "name": "Arshi Hasmat",
+  "email": "arshi.hasmat84@gmail.com",
+  "googleId": "116279233659970537975",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-05T17:35:42.507Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6892ecb44d72ddff3bf4f4f9"
+  },
+  "name": "Arshi Hasmat",
+  "email": "arshi.hasmat@rediffmail.com",
+  "password": "$2a$12$s90i.Uxm0.cOUZL6UkO9XOAAqIhjp5ucPT29rWUJCm.KlhlDL8rti",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-06T05:48:36.793Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-06T05:48:37.123Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "689349d0842bc1554a0e99c8"
+  },
+  "name": "sae chee",
+  "email": "sae.che85@gmail.com",
+  "googleId": "116777627112118964543",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-06T12:25:52.086Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6895a25de99b46c0a93cb49f"
+  },
+  "name": "Priyangshu Datta",
+  "email": "priyangshu.datta@outlook.com",
+  "googleId": "109881166627849739787",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-08T07:08:13.580Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68975b1f29bddb4b9c09c8eb"
+  },
+  "name": "Neil Joshi",
+  "email": "njoshi22@gmail.com",
+  "googleId": "106245071310743247917",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-09T14:28:47.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "689ae8953d750d9a5b1d3032"
+  },
+  "name": "Ayush Gupta",
+  "email": "official.initialsesports@gmail.com",
+  "password": "$2a$12$A6no3ckg3EiOdJuXsng4QOLMb9W2qg68YKkaXqTBeKLPxScPPGDja",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-12T07:09:09.025Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-12T07:09:09.363Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "689b132970e58ddb9532dba2"
+  },
+  "name": "Atharv Naik",
+  "email": "atharvnaik.it@gmail.com",
+  "googleId": "116662996544734456692",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-12T10:10:49.978Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "689bc7297298256ead316b48"
+  },
+  "name": "Coby",
+  "email": "9jbryant2@gmail.com",
+  "googleId": "105368358909327007583",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-12T22:58:49.301Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "689c82495018e0e379f055ba"
+  },
+  "name": "K charantej",
+  "email": "sparktechno060@gmail.com",
+  "password": "$2a$12$i8gils1pKAymID38nOXHE.3AGKalnP3EaqvFw04CMG2yM.9kkkP0O",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-13T12:17:13.170Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-13T12:17:13.548Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "689cb60b00e87ea8d85b9d9b"
+  },
+  "name": "Anish Banerjee",
+  "email": "anish.banerjee@greenai.services",
+  "password": "$2a$12$PBuhNFknY5UasaVPVW95nu1YKYoalbdsR95eYr7eYMK7bFvSBO1LG",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-13T15:58:03.924Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-13T15:58:04.339Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a00406fa59ced61ba29ea3"
+  },
+  "name": "Sumit Kumar",
+  "email": "asumitkumar328@gmail.com",
+  "googleId": "101916334182287479163",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-16T04:07:34.624Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a29f845c09287ca098151c"
+  },
+  "name": "Wilfred Munyaradzi Kahlari",
+  "email": "wilfredkahlari@gmail.com",
+  "googleId": "100626746248646399188",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-18T03:35:32.003Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a3310437197bdc71c30ffe"
+  },
+  "name": "Gaetano",
+  "email": "giorgionella@tiscali.it",
+  "password": "$2a$12$iD6gInpBXqAN3tLLP1OI8ezcc/87FcsAalbbvXgU/pjKLg1SI/3QW",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-18T13:56:20.646Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-18T13:56:21.022Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a375041d449125ad0b8bf3"
+  },
+  "name": "Suprio Ray",
+  "email": "suprioray32@gmail.com",
+  "googleId": "118323784885321247954",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-18T18:46:28.877Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a37cbc7edcc0996a427034"
+  },
+  "name": "Sayanha Ghosh",
+  "email": "g.sayan30@gmail.com",
+  "googleId": "115565042487958776878",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-18T19:19:24.183Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a721da7d9af403c9cadf57"
+  },
+  "name": "SUBHAM BERA",
+  "email": "casubhambera2016@gmail.com",
+  "password": "$2a$12$d1ua.WQVmpa6n9JNorRt/.QUXdmZgp/Sv4nD5lIKIEFxlsMypoMfW",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-21T13:40:42.811Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-21T13:40:43.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac2553e846b7c09348ec95"
+  },
+  "name": "PAOLO  MICHELE BOVE",
+  "email": "bovepaolo@gmail.com",
+  "password": "$2a$12$cLbqaP8H10VpRlx3xsCbj.v38k6iOn6d8MmrNIrJJLPhLjRUkU7eC",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-25T08:56:51.753Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-25T08:56:52.119Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ad4fbcf448eeb8f785c0c8"
+  },
+  "name": "SOUMEN GHOSH",
+  "email": "soumenmech@gmail.com",
+  "password": "$2a$12$7kivE485erY7TeSrcyq2oOUC.Aw/sGcSJ8L4u1ayB8563j6moDqP.",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-26T06:10:04.006Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-26T06:10:04.387Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ad62d0f448eeb8f785c19e"
+  },
+  "name": "S k",
+  "email": "satyajit644@gmail.com",
+  "password": "$2a$12$CHXlx4IZNcgi5DObbDeWNeEIDH5wtqgLSaWPw2rCnbbizkohY2WQ2",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-26T07:31:28.680Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-26T07:31:29.073Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ad829111dfe63c59416b57"
+  },
+  "name": "Intra Server",
+  "email": "intraserver.in@gmail.com",
+  "googleId": "103607831552072504073",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-26T09:46:57.244Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68adb0250da50f01f6126a29"
+  },
+  "name": "Riccardo",
+  "email": "riccardosala2011@gmail.com",
+  "password": "$2a$12$mfIdTxCpq.9Sj0OEhDq1/.63idUGaVJMg2LLVks0ziE/WJzi5U6Di",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-26T13:01:25.953Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-26T13:01:26.445Z"
+  },
+  "__v": 0,
+  "otp": "804493",
+  "otpExpires": {
+    "$date": "2025-08-26T13:11:26.456Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68add267cac6a54db97cdfd5"
+  },
+  "name": "RK Mjr",
+  "email": "rkmajumdar27@gmail.com",
+  "googleId": "100968537635236389018",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-26T15:27:35.016Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68add86f38f5ab233b0051a4"
+  },
+  "name": "Rony fashion",
+  "email": "rony.email89@gmail.com",
+  "password": "$2a$12$5tCEy2bp5riX3fshizBHLOhy3.9i.b..jWXnklFyb5ks0FTWTdD4C",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-26T15:53:19.258Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-26T15:53:19.769Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ae9ae81cd2f35cbfdc0e63"
+  },
+  "name": "Saurav Bhattacharyya",
+  "email": "piyalisaurav@gmail.com",
+  "password": "$2a$12$AKhPhSihZWJ07WdrRyxwXOtdS.DINXkMr89zZS4faY7fWD0cdpm4e",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-27T05:43:04.794Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-27T05:43:05.199Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b1eebe861b6044b22413ab"
+  },
+  "name": "Supratim Pal",
+  "email": "supratimtt@gmail.com",
+  "googleId": "104413273968590753532",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-29T18:17:34.414Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b255f4861b6044b224150e"
+  },
+  "name": "Ankur Haldar",
+  "email": "haldar.ankur@yahoo.in",
+  "password": "$2a$12$Ht.d950YHqikiL2H.OX2B.DmH2nVpWWb/OGXMIfbg7CDITsnHTxQa",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-30T01:37:56.789Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-30T01:37:57.271Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b26462861b6044b224156e"
+  },
+  "name": "Ritanya Ghosh",
+  "email": "moumitaghoshfeb2011@gmail.com",
+  "googleId": "105260070599569229503",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-30T02:39:30.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b28fa8861b6044b22416b7"
+  },
+  "name": "Aftab Alam",
+  "email": "aftabb8972@gmail.com",
+  "password": "$2a$12$AMuWfaf4EzkXNf22O1xSXOj79A.bMWlzzpUgVvLUxoKTeZBCsQxNG",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-30T05:44:08.217Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-30T05:44:08.900Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b29b22861b6044b224172f"
+  },
+  "name": "2024 11091",
+  "email": "202411091@dau.ac.in",
+  "googleId": "107124387810380023189",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-30T06:33:06.341Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b3fc86ca8468a8a61196a8"
+  },
+  "name": "DEBJYOTI",
+  "email": "debjyotiofficial18@gmail.com",
+  "password": "$2a$12$Jytdv3.qqcQNrKron6QmO.AcpFlP2FUhKypvX9D2JWSXG9eMc/qLC",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-31T07:40:54.665Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-31T07:40:55.171Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b40c62ca8468a8a61197ff"
+  },
+  "name": "Eftelya",
+  "email": "guel.eftelya@hblalentia.at",
+  "password": "$2a$12$CUsOYzzIGuOmpcVil5MjlOKkpVqMWHAF71OxnwfNM6dKKPIDjH5fm",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-08-31T08:48:34.156Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-31T08:48:34.637Z"
+  },
+  "__v": 0,
+  "otp": "392413",
+  "otpExpires": {
+    "$date": "2025-08-31T08:58:34.707Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b479c2ca8468a8a6119964"
+  },
+  "name": "Sabyasachi Chatterjee",
+  "email": "sabyasachi.chatterjee@greenai.services",
+  "password": "$2a$12$cokcxLavHPQSriD0l.CKjevYHZaIV1xgmx0MWtE.BrKGLLpYVyFj6",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-08-31T16:35:14.010Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-08-31T16:35:14.508Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b59efded3d042716c8605f"
+  },
+  "name": "Subham Dutta",
+  "email": "subham031@gmail.com",
+  "googleId": "117379496319487471168",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-01T13:26:21.411Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b5b77aed3d042716c860f1"
+  },
+  "name": "Reehab Tabish",
+  "email": "rehab.bunny24122008@gmail.com",
+  "googleId": "112757310998235742375",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-01T15:10:50.377Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b6c599ed3d042716c866b9"
+  },
+  "name": "Sankhadeep Chakrabarti",
+  "email": "sankhadeep31@gmail.com",
+  "googleId": "116495597484483619750",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-02T10:23:21.345Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b6f634ed3d042716c8695e"
+  },
+  "name": "Jherome",
+  "email": "gjherome@yahoo.com",
+  "password": "$2a$12$qTpMtgSgTImM3AQlXwooDOKYO63YF982iXSnBjSLO8ZFjhWQHjyAC",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-02T13:50:44.424Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-09-02T13:50:44.775Z"
+  },
+  "__v": 0,
+  "otp": "431729",
+  "otpExpires": {
+    "$date": "2025-09-02T14:00:44.850Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b952f15148c0f37fb52c37"
+  },
+  "name": "Wahyu Hidayat",
+  "email": "wh2586086@gmail.com",
+  "googleId": "116395666516965862345",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-04T08:50:57.254Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68be63b31a05dfcc301fa018"
+  },
+  "name": "Priyangshu Datta",
+  "email": "priyangshu.datta@greenai.services",
+  "googleId": "100728120533020545401",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-08T05:03:47.505Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c26c24e7999569c7d1f201"
+  },
+  "name": "Andrea Visciola",
+  "email": "aviscio@tin.it",
+  "password": "$2a$12$FKdQqkDLc/dIW3CKI13oOeNHqgVd/.sFmLI0XoycoiZzGT4YfZAbC",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-09-11T06:28:52.084Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-09-11T06:28:52.589Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68c29ed8feffcd098d1cb531"
+  },
+  "name": "Sk Santo",
+  "email": "rskhabibur464@gmail.com",
+  "password": "$2a$12$V/LtbmFfLRL/NnVrCXt18OLieEjagoh7JiQct.jqMp6S1Z.fuuxya",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-09-11T10:05:12.690Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-09-12T16:07:35.976Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ca4eaff1b549196f6218f0"
+  },
+  "name": "Palash",
+  "email": "p19795353@gmail.com",
+  "googleId": "102087735591252671695",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-17T06:01:19.184Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68cd2433f1b549196f62281c"
+  },
+  "name": "Bhagyashree",
+  "email": "bhagyashreexbagchi@gmail.com",
+  "googleId": "107424671194844550874",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-19T09:36:51.727Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68cedecef1b549196f6230d2"
+  },
+  "name": "sandip modha",
+  "email": "sjmodha@gmail.com",
+  "googleId": "111587092506579934481",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-20T17:05:18.927Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d63f48029b824f3290f549"
+  },
+  "name": "Maneesh Khanna",
+  "email": "mk@nawcal.com",
+  "googleId": "116278701884587404704",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-09-26T07:22:48.923Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d7ace0029b824f3290fe42"
+  },
+  "name": "Kanak Ray",
+  "email": "kanak00ray@gmail.com",
+  "password": "$2a$12$apUC9uw36U9ZHFlG3nzgCuZ3cP6v4KeW4aV7Ku9xtkyXyAIRUYbRq",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-09-27T09:22:40.906Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-09-27T09:22:41.394Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e13fc4893d9be351873089"
+  },
+  "name": "Andreia",
+  "email": "andreiafarias2005@gmail.com",
+  "password": "$2a$12$7T9TGnuXZyaNJ9wjDbWl6uHTNU1eISagdLJqv82StNFvl..qHYguC",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-10-04T15:39:48.771Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-10-04T15:39:49.268Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e34fa6893d9be3518734c2"
+  },
+  "name": "Masum Choudhury",
+  "email": "choudhurymasum42@gmail.com",
+  "googleId": "102189157899153436591",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-10-06T05:12:06.028Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e60b50404da98a1960ec71"
+  },
+  "name": "Shiva Pal",
+  "email": "shivapal94805@gmail.com",
+  "password": "$2a$12$xCgH3kllPpMhPzItk3NDUuEOfPpCfSGczwqSDiz7pauHV./E5EJz2",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-10-08T06:57:20.536Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-10-08T06:57:20.947Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e9eabce8877bf5093b3b88"
+  },
+  "name": "Mousumi Pati",
+  "email": "mousumipati1234@gmail.com",
+  "googleId": "100890061344471960190",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-10-11T05:27:24.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ea2b98e8877bf5093b3e68"
+  },
+  "name": "Sadhika",
+  "email": "sadhika.mill08@gmail.com",
+  "password": "$2a$12$kD33o2zFijQ7.Ao2bTxdzuebDNSNEY6tplWo/ThBUkuZoxOnS/SfO",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-10-11T10:04:08.042Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-10-11T10:04:08.404Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ec93c6e8877bf5093b45d2"
+  },
+  "name": "Robert downey",
+  "email": "robert.project.pr@gmail.com",
+  "googleId": "112769196813537401445",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-10-13T05:53:10.576Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68f0971f7fc29303f51ddc58"
+  },
+  "name": "Aslam Md.",
+  "email": "aslam.modernrailtech@gmail.com",
+  "googleId": "115796543746082615228",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-10-16T06:56:31.705Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68f6528bf0191e9c0172db1d"
+  },
+  "name": "Karen Catteeuw",
+  "email": "karen.catteeuw@molenland.be",
+  "password": "$2a$12$EFqbTjQkNv92iYyVd9Dei.VcQNyVzEu5I7F8wwy9Qhd0HxFm77K8G",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-10-20T15:17:31.575Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-10-20T15:17:32.140Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68f73613f0191e9c0172de9f"
+  },
+  "name": "Swagata Mallick",
+  "email": "swagatamallick1995@gmail.com",
+  "password": "$2a$12$z5MkeuPYVqqZ9Y7/RtCO/.Y4sktuSieJlbwVRwi0ro9aEWQGKl0.S",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-10-21T07:28:19.407Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-10-21T07:28:19.957Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68fa1428f0191e9c0172e952"
+  },
+  "name": "Apoorva Choudhary",
+  "email": "apoorvachoudhary5001@gmail.com",
+  "googleId": "102758952619380996722",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-10-23T11:40:24.480Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68fa2423f0191e9c0172ea7d"
+  },
+  "name": "Joydeep Bhattacharya",
+  "email": "emailjoydeep@gmail.com",
+  "password": "$2a$12$2d3niS2syHY1r7nY3qsRtuMvSQk3iOpqb40LWpz9.HvVx7gDOa5lG",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-10-23T12:48:35.074Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-10-23T12:48:35.598Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6901dc55366c4d51d4aaa433"
+  },
+  "name": "Sajid Rahman",
+  "email": "sajidr011ai@gmail.com",
+  "googleId": "105117757623210806546",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-10-29T09:20:21.534Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "690256d2366c4d51d4aaa57a"
+  },
+  "name": "shilpa nagod",
+  "email": "shilpa.nagod@gmail.com",
+  "password": "$2a$12$d2Yr5PgWrdcXuJbtIHcA0.FSvlDgUDyesEbIymsQFjd5qtfnZbxLG",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-10-29T18:02:58.072Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-10-29T18:02:58.577Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69046f0ff6f0035e7760e97f"
+  },
+  "name": "Ujjal Roy",
+  "email": "royujjal497@gmail.com",
+  "password": "$2a$12$n72tqV/327PN5H5JfDD4f.BgD2i1wiW27EEzUTmKVHcqHMNvafaWa",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-10-31T08:10:55.136Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-10-31T08:10:55.692Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69049d6ec7e28e5db1cac482"
+  },
+  "name": "Rishav Mondal",
+  "email": "rishavmondal.greenaiservices@gmail.com",
+  "googleId": "108079757697297310816",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-10-31T11:28:46.120Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6905c321483cddcc854edd92"
+  },
+  "name": "2023 11034",
+  "email": "202311034@dau.ac.in",
+  "googleId": "113225058449755796319",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-11-01T08:21:53.093Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6906cc1213be8b9e7b5f0311"
+  },
+  "name": "Atharv Naik",
+  "email": "atharv.naik@greenai.services",
+  "googleId": "114946231040470409979",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-11-02T03:12:18.878Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "690b2fd5751c9fed48535b04"
+  },
+  "name": "Nnamani Emmanuel",
+  "email": "emmanuelnnam002@gmail.com",
+  "googleId": "116704543173507802877",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-11-05T11:07:01.319Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6913783bfebbb770d4b067bc"
+  },
+  "name": "Pushpalatha KR",
+  "email": "pushpalathakr99@gmail.com",
+  "password": "$2a$12$zMPJErHuMoqGhZhU6Eg8Du4CK4VIK1Z2NGXBY.CXySE.mYJMDtz/m",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-11-11T17:54:03.373Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-11-11T17:54:03.861Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6920473ec544471da47bc999"
+  },
+  "name": "GreeAI",
+  "email": "greeailocal@gmail.com",
+  "password": "$2a$12$L92OZIWvpscOd6vEDIblMOD1HvofFZniaDn6xC3J3BfRTuak5lzCi",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-11-21T11:04:30.233Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-11-21T11:04:30.711Z"
+  },
+  "__v": 0,
+  "otp": "333708",
+  "otpExpires": {
+    "$date": "2025-11-21T11:09:30.795Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692729472a88b99a3aa990a7"
+  },
+  "name": "amalesh thakur",
+  "email": "amalesh.thakur84@gmail.com",
+  "password": "$2a$12$7omAlUAnLQ7OqWcbzpykCOolkkcNFM.tuEbyiXYYYixMQKpiaJqea",
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-11-26T16:22:31.530Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-11-26T16:22:32.018Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69306961ef2ba0b8e5c88914"
+  },
+  "name": "RATHA HEMBRAM",
+  "email": "ratharajhembram92@gmail.com",
+  "password": "$2a$12$gr7DE4WbsGSsWWKM1CPYaexUu0JLKnODUSYfsXV/A8D8HyJGlMhua",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-12-03T16:46:25.270Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-12-03T16:46:25.819Z"
+  },
+  "__v": 0,
+  "otp": "763773",
+  "otpExpires": {
+    "$date": "2025-12-03T16:51:25.892Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6931a61cef2ba0b8e5c88dd7"
+  },
+  "name": "Dr Parantap Sarkar",
+  "email": "parantap1984@gmail.com",
+  "password": "$2a$12$iO0DAuQsCZfk4KMP9YAsu.3wTkPvlYmNxUyC/4UPPHGQePtp0n1j2",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-12-04T15:17:48.640Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-12-04T15:17:49.113Z"
+  },
+  "__v": 0,
+  "otp": "106330",
+  "otpExpires": {
+    "$date": "2025-12-04T15:22:49.186Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6934296bc36e213cea0a551a"
+  },
+  "name": "Mandira Panda",
+  "email": "mandira.panda36@gmail.com",
+  "googleId": "105008281848157001261",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-12-06T13:02:35.077Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693830b478423e9e972a9fc4"
+  },
+  "name": "Badal Paul",
+  "email": "badal00058@gmail.com",
+  "password": "$2a$12$TmY8OKQy3lnhpAuPk3agmu4bCuuybHSAn61Ny.uUdgNDDoJyeoPj6",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-12-09T14:22:44.121Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-12-09T14:22:44.689Z"
+  },
+  "__v": 0,
+  "otp": "205585",
+  "otpExpires": {
+    "$date": "2025-12-09T14:27:44.763Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "693ff8c2aa3ba18efcc10dc6"
+  },
+  "name": "mukesh kumar",
+  "email": "muskandstudio@gmail.com",
+  "googleId": "108346066260965000554",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-12-15T12:02:10.903Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "694a1da99a13db28ad0ed626"
+  },
+  "name": "Nokatri Sitinjak",
+  "email": "nokatrisitinjak@gmail.com",
+  "googleId": "101537648793073474223",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-12-23T04:42:17.107Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69509c49a1c308065be94ae5"
+  },
+  "name": "Dr Karuna Penjiara",
+  "email": "karunapenjiara1@gmail.com",
+  "password": "$2a$12$dQG6/y9WN2XiLVick4fSNu3UNJOoKU2CY6gsxrLOqbqwIwI9YYEYa",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-12-28T02:56:09.918Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-12-28T02:56:10.409Z"
+  },
+  "__v": 0,
+  "otp": "758447",
+  "otpExpires": {
+    "$date": "2025-12-28T03:01:10.483Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "695151ec01f3c5ab79dff8dd"
+  },
+  "name": "Honey anth",
+  "email": "honeyanth822@gmail.com",
+  "googleId": "101127618872282306834",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-12-28T15:51:08.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69529ca401f3c5ab79e00463"
+  },
+  "name": "Ramesh Chandra Malik",
+  "email": "ramesmalik@gmail.com",
+  "password": "$2a$12$Q3Js8sZ1.orudKkPuDVOZe8ewkWwbbHbUISNtqk6u2mmtkwaWXx1i",
+  "verified": false,
+  "createdAt": {
+    "$date": "2025-12-29T15:22:12.701Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2025-12-29T15:22:13.067Z"
+  },
+  "__v": 0,
+  "otp": "981723",
+  "otpExpires": {
+    "$date": "2025-12-29T15:27:13.138Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "695a87e79dccf7587defc191"
+  },
+  "name": "Istaker Ail",
+  "email": "istakerail544@gmail.com",
+  "googleId": "106587340881194081771",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-01-04T15:31:51.675Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695c9951d8d267c46399a86d"
+  },
+  "name": "prova borah",
+  "email": "provaborah92@gmail.com",
+  "password": "$2a$12$lXQ8eaGtyMlIKadV4.H7/OPaSBlL8GMoKQngjg8AUC1DwSdS9OPza",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-01-06T05:10:41.806Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-01-06T05:10:42.330Z"
+  },
+  "__v": 0,
+  "otp": "977930",
+  "otpExpires": {
+    "$date": "2026-01-06T05:15:42.408Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "695cc2a736d39b148aafb16a"
+  },
+  "name": "Pulin Borah",
+  "email": "pulinborah60@gmail.com",
+  "googleId": "101688253734303655660",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-01-06T08:07:03.480Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cc37e36d39b148aafb18c"
+  },
+  "name": "prova borah",
+  "email": "pulinborah252@gmail.com",
+  "password": "$2a$12$rYAXn2dRlWHbvFJUx0TXnOCgrYffvGxcOFpOpokYCJJwHNGV3X2SG",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-01-06T08:10:38.356Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-01-06T08:10:38.838Z"
+  },
+  "__v": 0,
+  "otp": "637347",
+  "otpExpires": {
+    "$date": "2026-01-06T08:15:38.912Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6961e08a332942bb5e57f8bc"
+  },
+  "name": "Salehin Gazi",
+  "email": "sgazi234b@gmail.com",
+  "googleId": "107597226915596820152",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-01-10T05:15:54.725Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "696ab05e8ca0e7999037e3da"
+  },
+  "name": "Nitika Gupta",
+  "email": "nitikagupta020616@gmail.com",
+  "password": "$2a$12$whez.lzZHjCdbD1NOI8fRO8YuswZqbEUloODBf89tszOx2JIP0./W",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-01-16T21:40:46.030Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-01-16T21:40:46.572Z"
+  },
+  "__v": 0,
+  "otp": "915838",
+  "otpExpires": {
+    "$date": "2026-01-16T21:45:46.652Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "696cfbfe8ca0e7999037e54f"
+  },
+  "name": "RAJESH ISLAM",
+  "email": "rajeshislam416@gmail.com",
+  "googleId": "102246478433963583163",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-01-18T15:27:58.903Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984a84363e73971a5542f5c"
+  },
+  "name": "Saheli Mandal",
+  "email": "sahelim589@gmail.com",
+  "googleId": "118401853472737980141",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-05T14:25:07.205Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698aca5f2d78e802a6f48c6b"
+  },
+  "name": "Ahmed Saleem",
+  "email": "asaleem8921@gmail.com",
+  "password": "$2a$12$GTA3moIoKHUsw9IBBye.0OGEUdkf0PWRLaGuJz/zQtdQdQDZJA0e.",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-10T06:04:15.051Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-02-10T06:04:15.547Z"
+  },
+  "__v": 0,
+  "otp": "655631",
+  "otpExpires": {
+    "$date": "2026-02-10T06:09:15.621Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "698c71e083e6e4358a5b952d"
+  },
+  "name": "Indranil",
+  "email": "indranil.greenaiservices@gmail.com",
+  "googleId": "113501846569395850349",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-11T12:11:12.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698c7504e757ea2ddfef2adc"
+  },
+  "name": "prem",
+  "email": "prem@gmail.com",
+  "password": "$2a$12$0Gbom8/z1Ur303QNkQhxaOV7DpP9FHydJkVH0.TYp.l9HFqCHhtE.",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-11T12:24:36.069Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-02-11T12:24:36.574Z"
+  },
+  "__v": 0,
+  "otp": "149178",
+  "otpExpires": {
+    "$date": "2026-02-11T12:29:36.644Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "698c91f2e757ea2ddfef39aa"
+  },
+  "name": "Bristi Kundu",
+  "email": "bristi.kundu12@gmail.com",
+  "googleId": "109043400559634483662",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-11T14:28:02.402Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698cb759e757ea2ddfef3b84"
+  },
+  "name": "Vikram Kumar",
+  "email": "vikramkumarbcrec2027@gmail.com",
+  "password": "$2a$12$COaWSXWA9VtDJc9KMwndLONzaiuYtHtlGyqjxUWD3mu2JlOzOPZ1C",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-11T17:07:37.159Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-02-11T17:07:37.657Z"
+  },
+  "__v": 0,
+  "otp": "524709",
+  "otpExpires": {
+    "$date": "2026-02-11T17:12:37.738Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6993a5c2e757ea2ddfef4a81"
+  },
+  "name": "Arshiya Kohli",
+  "email": "arshiyakohli09@gmail.com",
+  "password": "$2a$12$ag03Z99Iz3DQcVhrCZcKC.JaXu9sGsivdHdTWZWBkiUSAkB/9BLN6",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-16T23:18:26.065Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-02-16T23:18:26.740Z"
+  },
+  "__v": 0,
+  "otp": "325302",
+  "otpExpires": {
+    "$date": "2026-02-16T23:23:26.812Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69946244e757ea2ddfef4d21"
+  },
+  "name": "soumi",
+  "email": "dsoumi192@gmail.com",
+  "password": "$2a$12$nuCzMZC.ELF1enphMPtyW.8W71Mb162ScC5MI63zrh76JcMxtFg/y",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-17T12:42:44.593Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-02-17T12:42:45.100Z"
+  },
+  "__v": 0,
+  "otp": "150406",
+  "otpExpires": {
+    "$date": "2026-02-17T12:47:45.174Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6995af402060cf0e1e893dc4"
+  },
+  "name": "Alazo Sale",
+  "email": "alazosale2002@gmail.com",
+  "password": "$2a$12$nt5jTAYgHqveHTQXy9b92.renibjTvC0XM3o3FZwM.T7QAgIAlnvC",
+  "verified": true,
+  "createdAt": {
+    "$date": "2026-02-18T12:23:28.995Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-02-18T12:23:29.683Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6995bc782060cf0e1e893e92"
+  },
+  "name": "Soumi",
+  "email": "soumi.greenaiservices@gmail.com",
+  "password": "$2a$12$6ncypjRVIieydCO/9YasVeq/fLrdkm6PKlEooYj93Z1tFF4qz6HXy",
+  "verified": true,
+  "createdAt": {
+    "$date": "2026-02-18T13:19:52.538Z"
+  },
+  "lastPasswordChange": {
+    "$date": "2026-02-18T13:19:53.088Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6995f23b2060cf0e1e893fdb"
+  },
+  "name": "Vishal Roy",
+  "email": "royv7283@gmail.com",
+  "googleId": "100037560794571279797",
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-18T17:09:15.384Z"
+  },
+  "__v": 0
+}]

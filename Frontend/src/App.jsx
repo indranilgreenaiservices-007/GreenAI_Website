@@ -33,6 +33,22 @@ import Applicants from "./components/HRPortal/Applicants";
 import Interviews from "./components/HRPortal/Interviews";
 import Settings from "./components/HRPortal/Settings";
 
+// Explore Portal Components
+import ExploreLayout from "./components/Explore/ExploreLayout";
+import ExploreDashboard from "./components/Explore/ExploreDashboard";
+import CLiCS from "./components/Explore/CLiCS";
+import RegIntel from "./components/Explore/RegIntel";
+import VidhiLab from "./components/Explore/VidhiLab";
+
+// Portal Components
+import UserLogDashboard from "./components/AdminPortal/UserLogDashboard";
+import UserDashboardOverview from "./components/AdminPortal/UserDashboardOverview";
+import UserListData from "./components/AdminPortal/UserListData";
+
+// Platform Auth Pages
+import PlatformLogin from "./pages/Auth/Login";
+import PlatformRegister from "./pages/Auth/Register";
+
 /**
  * GreenAI Services — Single-file React corporate website (Refactored)
  * Tech: React + Tailwind CSS
@@ -158,6 +174,15 @@ const RequireAdmin = ({ children }) => {
   return children;
 };
 
+// Platform User Logic (for Clients)
+const PlatformRequireAuth = ({ children }) => {
+  const token = localStorage.getItem('platformToken');
+  if (!token) {
+    return <Navigate to="/auth/login" replace />;
+  }
+  return children;
+};
+
 const PublicLayoutWrapper = () => (
   <Layout>
     <Outlet />
@@ -189,6 +214,16 @@ export default function App() {
         } />
       </Route>
 
+      {/* User Log Dashboard Routes */}
+      <Route path="/gai-portal/user-logs" element={
+        <RequireAdmin>
+          <UserLogDashboard />
+        </RequireAdmin>
+      }>
+        <Route index element={<UserDashboardOverview />} />
+        <Route path="data" element={<UserListData />} />
+      </Route>
+
       {/* HR Portal Routes - Completely Separate Layout (Sidebar based) */}
       <Route path="/gai-portal/hr" element={
         <RequireAuth>
@@ -202,6 +237,27 @@ export default function App() {
         <Route path="interviews" element={<Interviews />} />
         <Route path="settings" element={<Settings />} />
       </Route>
+
+      {/* Platform Auth Routes */}
+      <Route path="/auth">
+        <Route path="login" element={<PlatformLogin />} />
+        <Route path="register" element={<PlatformRegister />} />
+      </Route>
+
+      {/* Explore / Enterprise Solutions / Dashboard Routes */}
+      <Route path="/dashboard" element={
+        <PlatformRequireAuth>
+          <ExploreLayout />
+        </PlatformRequireAuth>
+      }>
+        <Route index element={<ExploreDashboard />} />
+        <Route path="clics" element={<CLiCS />} />
+        <Route path="regintel" element={<RegIntel />} />
+        <Route path="vidhilab" element={<VidhiLab />} />
+      </Route>
+
+      {/* Redirect old /explore to /dashboard */}
+      <Route path="/explore" element={<Navigate to="/dashboard" replace />} />
     </Routes>
   );
 }

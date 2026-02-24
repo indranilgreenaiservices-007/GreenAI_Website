@@ -62,20 +62,20 @@ const GAIPortal = () => {
                     </p>
                 </div>
 
-                <div className="flex  gap-6 md:gap-8 justify-center">
+                <div className="flex  gap-6 md:gap-8 justify-center ">
                     {/* 1. HR Portal Option */}
                     <div
                         onClick={handleHRPortal}
-                        className="bg-white rounded-2xl shadow-xl p-8 cursor-pointer hover:shadow-2xl transition-all hover:scale-105 border-2 border-transparent hover:border-green-500 flex flex-col items-center text-center h-full group"
+                        className="bg-white rounded-2xl shadow-xl p-10 cursor-pointer hover:shadow-2xl transition-all hover:scale-105 border-2 border-transparent hover:border-green-500 flex flex-col items-center text-center h-full group"
                     >
                         <div className="bg-blue-100 p-5 rounded-full mb-6 group-hover:bg-blue-200 transition-colors">
                             <Users className="h-10 w-10 text-blue-600" />
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">
-                            HR Portal
+                            Compliance Portal
                         </h3>
                         <p className="text-gray-600 mb-6 text-sm flex-grow">
-                            Access HR-related tools and resources
+                            Access related tools and resources
                         </p>
                         <button className="mt-auto px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors w-full text-sm font-semibold">
                             Open Portal
@@ -85,7 +85,7 @@ const GAIPortal = () => {
                     {/* 2. Education Portal Option */}
                     <div
                         onClick={handleInternalPortal}
-                        className="bg-white rounded-2xl shadow-xl p-8 cursor-pointer hover:shadow-2xl transition-all hover:scale-105 border-2 border-transparent hover:border-green-500 flex flex-col items-center text-center h-full group"
+                        className="bg-white rounded-2xl shadow-xl p-10 cursor-pointer hover:shadow-2xl transition-all hover:scale-105 border-2 border-transparent hover:border-green-500 flex flex-col items-center text-center h-full group"
                     >
                         <div className="bg-green-100 p-5 rounded-full mb-6 group-hover:bg-green-200 transition-colors">
                             <LayoutDashboard className="h-10 w-10 text-green-600" />
@@ -104,11 +104,32 @@ const GAIPortal = () => {
                     {/* 3. Google Drive Option */}
 
 
-                    {/* 4. Admin Access Management (Only for Admins) */}
+                    {/* 4. User Logs (Only for Admins) */}
+                    {user?.role === 'admin' && (
+                        <div
+                            onClick={() => navigate("/gai-portal/user-logs")}
+                            className="bg-white rounded-2xl shadow-xl p-10 cursor-pointer hover:shadow-2xl transition-all hover:scale-105 border-2 border-transparent hover:border-emerald-500 flex flex-col items-center text-center h-full group ring-2 ring-emerald-100"
+                        >
+                            <div className="bg-emerald-100 p-5 rounded-full mb-6 group-hover:bg-emerald-200 transition-colors">
+                                <HardDrive className="h-10 w-10 text-emerald-600" />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">
+                                User Logs
+                            </h3>
+                            <p className="text-gray-600 mb-6 text-sm flex-grow">
+                                Platform user trends & analytics
+                            </p>
+                            <button className="mt-auto px-6 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors w-full text-sm font-semibold">
+                                View Analytics
+                            </button>
+                        </div>
+                    )}
+
+                    {/* 5. Admin Access Management (Only for Admins) */}
                     {user?.role === 'admin' && (
                         <div
                             onClick={handleAdminAccess}
-                            className="bg-white rounded-2xl shadow-xl p-8 cursor-pointer hover:shadow-2xl transition-all hover:scale-105 border-2 border-transparent hover:border-purple-500 flex flex-col items-center text-center h-full group ring-2 ring-purple-100"
+                            className="bg-white rounded-2xl shadow-xl p-10 cursor-pointer hover:shadow-2xl transition-all hover:scale-105 border-2 border-transparent hover:border-purple-500 flex flex-col items-center text-center h-full group ring-2 ring-purple-100"
                         >
                             <div className="bg-purple-100 p-5 rounded-full mb-6 group-hover:bg-purple-200 transition-colors">
                                 <Shield className="h-10 w-10 text-purple-600" />
@@ -120,7 +141,7 @@ const GAIPortal = () => {
                                 Manage users, roles & permissions
                             </p>
                             <button className="mt-auto px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors w-full text-sm font-semibold">
-                                Manage Users
+                                Manage Access
                             </button>
                         </div>
                     )}

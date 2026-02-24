@@ -42,7 +42,7 @@ const Footer = () => {
 
     const portals = [
         { name: "GAI Portal", path: "/gai-portal" },
-        { name: "HR Portal", path: "/hr-portal" },
+        // { name: "HR Portal", path: "/hr-portal" },
     ];
 
     const quickLinks = [
